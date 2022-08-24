@@ -1,0 +1,287 @@
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  *::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: hero-new, sans-serif;
+  }
+  body {
+    margin: 0;
+    font-family: hero-new, sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 1px solid red; */
+  }
+  .hf-home__banner-wrap {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .hf-home__banner-wrap .flex-parent {
+    text-align: center;
+    justify-content: space-around;
+  }
+  .flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  ._65-col-box {
+    width: 80vw;
+   
+  }
+  .hf-body__heading-large {
+    font-size: 45px;
+    line-height: 1.167;
+  }
+  .hf-body__heading-bold {
+    color: var(--heading--bold);
+  }
+  .hf-body__para {
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body-text);
+  }
+  p {
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .signup-banner__wrap {
+    margin: 40px 0;
+  }
+  .signup-straptxt__link,
+  .signup-straptxt__link:hover {
+    font-size: 12px;
+    color: #989dad;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .signup-straptxt__link:hover {
+    border-bottom: 1px dashed #989dad;
+  }
+  .signup-straptxt__link.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.25s linear;
+  }
+  .signup-banner {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .signup-banner__button {
+    width: 36%;
+    font-size: 13px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 18px 20px;
+    display: inline-block;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #f16631;
+    white-space: nowrap;
+  }
+  .es .signup-banner__button {
+    padding: 18px 10px;
+  }
+  .helpdesk-email,
+  .helpdesk-email:focus {
+    width: 70%;
+    background: #fff;
+    border: 2px solid #f16631;
+    border-right: none;
+    color: #181c20;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    padding: 16px 19px;
+    font-size: 16px;
+  }
+  .helpdesk-email:focus {
+    outline: none;
+  }
+  .helpdesk-email:focus::placeholder {
+    color: rgb(0, 0, 0, 0.4);
+  }
+  .signup-banner__error {
+    opacity: 1;
+    height: 0;
+    font-size: 14px;
+    color: #ce2525;
+    margin: 15px auto;
+    text-align: left;
+    max-width: 550px;
+    padding-left: 20px;
+  }
+  /* .signup-banner__error:hover{
+    opacity: 1;
+    display: block;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in;
+    height: auto;
+  } */
+
+   /* .signup-banner__error .slide-down {
+    opacity: 1;
+    display: block;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in;
+    height: auto;
+   }
+  .signup-banner__error .slide-up {
+    opacity: 0;
+    height: 0;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+  }  */
+
+  .hf-home__video-wrap {
+    margin-top: 25px;
+  }
+
+  .hf-home__banner-wrap {
+    padding-top: 50px;
+    text-align: center;
+   
+  }
+
+  .hf-home__video-wrap .container {
+    width: 80vw;
+    height: 100vh;
+    background-image: url(https://assets.www.happyfox.com/v2/images/version_2_cover_new.jpg);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    /* background: #fdfdfd; */
+    box-shadow: 0 13px 25px 0rgb (0 0 0 / 20%);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .hf-home__video-wrap .container,
+  .hf-home__video-wrap .container {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hf-home__video-wrap .container {
+    padding: 0;
+  }
+  .hf-home__award-video {
+    padding: 70px 0;
+  }
+  .text-center {
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+   
+  }
+  .lazyloaded {
+    opacity: 1;
+    transition: all 750ms ease-in;
+  }
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  .hf-home__award-video h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 40px 0 20px;
+    color: inherit;
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .hf-subtle__link {
+    color: #555;
+    font-weight: 500;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .hf-usecase__btn-wrap {
+    padding-top: 45px;
+  }
+  .hf-demo__btn.outlined {
+    background: 0 0;
+    color: var(--body-text-2);
+    border: 2px solid var(--body-text-2);
+    padding: 9px 19px;
+    border: 1px solid #000;
+  }
+
+  .hf-demo__btn,
+  .hf-demo__btn:focus,
+  .hf-demo__btn:hover {
+    font-size: 16px;
+    font-weight: 500;
+    background: #fff;
+    color: #000;
+    outline: 0;
+    border: 2px solid #000;
+    display: inline-block;
+    box-shadow: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
