@@ -5,9 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+ <div id="parentTop"> 
+    <div id="navbarTop">
+    <div>
+        <img src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="navbar_symbol">
+    </div>
+    <div id="upper_dropdown">
+        <div id="customerService">
+            <ul>
+                <li><span>Customer Service</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><span>IT Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><span>Operations Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>login</li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+    <div id="parentBottom">
+        <div id="navbarbottom">
+        <div>
+            <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="navbar_symbol">
+        </div>
+        <div id="lower_dropdown">
+            <div>
+                <ul>
+                    <li><span>Features</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><span>Solutions</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><span>pricing</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><span>Resources</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            
+                <button><a href="">Get a Demo</a></button>
+            
+        </div>
+        </div>
+    </div>
+    <div id="feat"></div>
+    <div id="body"></div>
 </body>
 </html>
 <script src="navbar.js"></script>
+<script type="module">
+    import {drop} from './components/dropdown.js'
+   //console.log(drop)
+   let n = 0
+   let feat = document.querySelector('#customerService');
+   feat.addEventListener("click",main)
+
+   function main(){
+       n++
+       
+       if(n%2!==0){
+           let x = drop()
+        document.getElementById("feat").innerHTML = drop()
+        document.getElementById("feat").style.backgroundColor = "white"
+       // console.log(x)
+       }else if(n%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+      
+   }
+   
+</script>
