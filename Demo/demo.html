@@ -5,8 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-    
+    <div id="demo_dtails">
+        <div  id="main_content">
+            <div class="demo_content">
+                <img src="https://assets.www.happyfox.com/v2/images/logos/hf-topbar-logo.svg" alt="logohappyfox">
+                <p>Get a 30 minute Help Desk Demo with our Product Experts</p> 
+                <ul>
+                    <li>Handle all incoming requests in one ticketing system</li>
+                    <li>Build an online knowledge base and promote self-service</li>
+                    <li>Automate repetitive tasks and serve your customers fast</li>
+                    <li>Analyze help desk metrics and take smart decisions</li>
+                </ul>    
+                <div class="rating_star_hide_mobile">
+                    <img src="https://assets.www.happyfox.com/img/pcmag-image.svg" alt="editors choice">
+                    <section>
+                        <p>Award the <span>Best Helpdesk <br> Software</span> for 6 years</p>
+                        <img src="https://assets.www.happyfox.com/img/star-list.svg" alt="star image">
+                    </section>
+                </div>
+                <div class="rating_star_hide_mobile">
+                    <img src="https://assets.www.happyfox.com/img/g2crowd-image.svg" alt="high perfomer">
+                    <section>
+                        <p>“A solid and flexible solution for <br> our growing company”</p>
+                        <img src="https://assets.www.happyfox.com/img/star-list.svg" alt="star image">
+                    </section>
+                </div>   
+            </div>
+            <div id="demo_form">
+                 <p>See HappyFox in Action</p>
+                 <form action="" id="form_fill">
+                    <input type="text" class="form_input"  required>
+                    <label class="placeholder">Your Name</label>
+                    <input type="email" class="form_input1"  required>
+                    <label class="placeholder1">Work Email</label>
+                    <input type="tel" class="form_input2" pattern="[0-9]{10}" required>
+                    <label class="placeholder2">Phone</label>
+                    <input type="text" class="form_input3"  required>
+                    <label class="placeholder3">Comapny Name</label>
+                    <select name="CompanySize" id="company_size">
+                        <option value="-1" selected style="display: none;"></option>
+                        <option value="1-10">1-10</option>
+                        <option  value="11-50">11-50</option>
+                        <option  value="51-200">51-200</option>
+                        <option  value="201-500">201-500</option>
+                        <option  value="501-1000">501-1000</option>
+                        <option  value="1001-5000">1001-5000</option>
+                        <option  value="5001-10000">5001-10000</option>
+                        <option  value="10000+">10000+</option>
+                    </select>
+                    <label id="select1">Company Size</label>
+                    <select name="Industry" id="industry_name">
+                        <option value="-1" selected style="display: none;"></option>
+                        <option value="banking">Banking</option>
+                        <option value="communication">Communication</option>
+                        <option value="construction">Construction</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="creativeAgency">Creative Agency</option>
+                        <option value="ecommerce">Ecommerce</option>
+                        <option value="educationTraining">Education Training</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="energy">Energy</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="enviromental">Enviromental</option>
+                        <option value="financialCreditServices">Financial or Credit Services</option>
+                        <option value="foodBevrage">Food & Bevrage</option>
+                        <option value="government">Government</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="hositality">Hospitality</option>
+                        <option value="insurance">Insurance</option>
+                        <option value="itServices">IT Services</option>
+                        <option value="machinery">Machinery</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="newsMediaPublications">News Media Publications</option>
+                        <option value="nonProfitOrganization">Non Profit Organization</option>
+                        <option value="realEstate">Real Estate</option>
+                        <option value="recreation">Recreation</option>
+                        <option value="retail">Retail</option>
+                        <option value="shipping">Shipping</option>
+                        <option value="softwareAppDevlopment">Software App Devlopment</option>
+                        <option value="technology">Technology</option>
+                        <option value="telecommunication">Telecommunication</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="wholesale">Whole Sale</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label id="select2">Industry</label>
+                    <select name="agentCount" id="agentCount">
+                        <option value="-1" selected style="display: none;"></option>
+                        <option value="1-5">1 - 5 agents</option>
+                        <option value="6-10">6 - 10 agents</option>
+                        <option value="11-20">11 - 20 agents</option>
+                        <option value="21-50">21 - 50 agents</option>
+                        <option value="51-100">51 - 100 agents</option>
+                        <option value="100+">100 agents</option>
+                    </select>
+                    <label id="select3">Agent Count</label>
+                    <select name="clientRegion" id="clientRegion">
+                        <option value="-1"  style="display: none"></option>
+                        <option value="US & CAN">USA / Canada</option>
+                        <option value="India">India</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Rest of EU">Europe, Middle East & Africa</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Latin America">Latin America</option>
+                        <option value="Rest of Apac">Asia Pacific</option>
+                    </select>
+                    <label id="select4">Your Region</label>
+                 </form>
+                 <button id="form_submit"><span>GET A DEMO NOW</span></button> 
+                 <P id="privacy">By submitting this form you agree to our Privacy Policy.</P>         
+            </div>
+        </div>
+        <!-- <div id="rating_mobile_view">
+            <div class="rating_star">
+                <img src="https://assets.www.happyfox.com/img/pcmag-image.svg" alt="editors choice">
+                <section>
+                    <p>Award the <span>Best Helpdesk Software</span> for 6 years</p>
+                    <img src="https://assets.www.happyfox.com/img/star-list.svg" alt="star image">
+                </section>
+            </div>
+            <div class="rating_star">
+                <img src="https://assets.www.happyfox.com/img/g2crowd-image.svg" alt="high perfomer">
+                <section>
+                    <p>“A solid and flexible solution for our growing company”</p>
+                    <img src="https://assets.www.happyfox.com/img/star-list.svg" alt="star image">
+                </section>
+            </div>
+        </div> -->
+    </div>
+    <div id="demo_page_content">
+        <div id="demo_page">
+            <ul>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/helpdesk-footer.svg" alt="Helpdesk" width="20" height="20">
+                  <span>Help Desk</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/hf-assist-ai-footer.svg" alt="Assit Ai" width="20" height="20">
+                  <span>Assit AI</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/livechat-footer.svg" alt="live chat" width="20" height="20">
+  
+                  <span>Live Chat</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/chatbot-footer.svg" alt="chatbot" width="20" height="20">
+                  <span>Chatbot</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/bi-footer.svg" alt="Bintelliigence" width="20" height="20">
+                  <span>Business Intelligence</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/workflows-footer.svg" alt="workflows" width="20" height="20">
+                  <span>Workflows</span>
+              </li>
+              <li>
+                  <img src="https://assets.www.happyfox.com/v2/images/bottom-footer/inapp-chat-footer.svg" alt="In-app chat" width="20" height="20">
+                  <span>In-App Chat</span>
+              </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/730676c17d.js" crossorigin="anonymous"></script>
