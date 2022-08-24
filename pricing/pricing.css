@@ -1,0 +1,285 @@
+.pricing-banner {
+    background: url(https://assets.www.happyfox.com/v2/images/pricing-new-banner-bg-new.png) no-repeat left top;
+    text-align: center;
+    background-size: cover;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@media (max-width: 576px){
+    .pricing-banner {
+        background-size: cover;
+    }
+}
+@media (max-width: 993px){
+    .pricing-banner {
+        background-size: 300%;
+    }
+}
+div {
+    display: block;
+}
+body {
+    font-family: hero-new,sans-serif;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.pricing-explainer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 77%;
+    align-items: stretch;
+    min-height: 90px;
+}
+.pricing-explainer__block.agent.chosen, .pricing-explainer__block.agent:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: none;
+}
+.pricing-explainer__block.agent, .pricing-explainer__block.volume {
+    background-color: #ffeada;
+    box-shadow: inset 0 -8px 10px 0 RGBA(0,0,0,.02);
+}
+.pricing-explainer__block.agent {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: none;
+}
+.chosen {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 24px 0 15px;
+    transition: all .2s linear;
+    border: none;
+}
+.pricing-explainer__block, .pricing-explainer__block:hover {
+    color: #212529;
+}
+.pricing-explainer__block {
+    width: 50%;
+    background: #fff;
+    cursor: pointer;
+    padding: 22px 0 16px;
+    transition: all .2s linear;
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a, a:hover {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.pricing-explainer__block.agent, .pricing-explainer__block.volume {
+    background-color: #ffeada;
+    box-shadow: inset 0 -8px 10px 0 RGBA(0,0,0,.02);
+}
+.pricing-explainer__block.volume {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom: none;
+}
+.pricing-explainer__block.volume:hover{
+    background-color: #fff;
+}
+.pricing-explainer__block, .pricing-explainer__block:hover {
+    color: #212529;
+}
+.pricing-explainer__block {
+    width: 50%;
+    background: #fff;
+    cursor: pointer;
+    padding: 22px 0 16px;
+    transition: all .2s linear;
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pricing-banner h1 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 600;
+    margin: 80px 0 76px;
+}
+.agent-pricing__bg-wrap, .volume-pricing__bg-wrap {
+    padding-top: 50px;
+}
+.agent-pricing__bg-wrap {
+    background: #fff;
+    box-shadow: 0 -8px 10px 0 RGBA(0,0,0,.02);
+}
+section {
+    display: block;
+}
+.pricing-calc__tab{
+    background: #f5f4f4;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+button {
+    cursor: pointer;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.pricing-calc__tabs.active, .pricing-calc__tabs:hover {
+    background: #fff;
+    font-weight: 600;
+    border: 1px solid #c8c7c7;
+}
+.pricing-calc__tabs {
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: 0 0;
+    outline: 0;
+    font-weight: 300;
+}
+
+.pricing-comparer {
+    padding-bottom: 50px;
+}
+.pricing-banner-para {
+    margin: 80px auto 40px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 570px;
+    border-radius: 16px;
+    padding: 14px 0 12px;
+    background: #f9f9f9;
+}
+.pricing-plans {
+    text-align: center;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#pricingTable .pricing-plans {
+    align-items: stretch;
+}
+/* .div-center {
+    display: table;
+    margin: auto;
+} */
+#pricingTable .mighty-box {
+    height: auto;
+}
+.mighty-box {
+    border-left: 1px solid #eee;
+    padding-top: 0;
+    border-top: none;
+}
+.mighty-box:first-child {
+    border-left: none;
+}
+.mighty-box h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 30px 20px;
+    text-align: left;
+}
+.pricing-figures {
+    padding: 0 25px;
+    text-align: left;
+}
+.pricing-dollar___symbol {
+    font-size: 24px;
+    font-weight: 500;
+}
+.pricing-dollar__amount {
+    font-size: 48px;
+}
+.pricing-dollar__amount-snip {
+    font-size: 12px;
+}
+.pricing-dollar-inner.show span, .pricing-savings-precentage-inner.show span {
+    visibility: visible;
+}
+.pricing-feature-list {
+    display: flex;
+    padding: 20px 35px 85px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+#Mighty .pricing-feature-list li, #Starter .pricing-feature-list li {
+    list-style: circle;
+    font-weight: 300;
+}
+.pricing-popular {
+    margin-top: -25px;
+    text-align: left;
+    padding: 0 30px;
+    margin-bottom: 5px;
+    color: #ff6200;
+    font-size: 14px;
+    font-weight: 400;
+}
+.pricing-savings-percentage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.pricing-savings-percentage-value {
+    color: #009928;
+}
+sup {
+    top: -0.5em;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.pricing-feature-list li {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    font-size: 14px;
+    color: #555550;
+    margin-bottom: 15px;
+    list-style: circle;
+    margin-left: 8px;
+}
