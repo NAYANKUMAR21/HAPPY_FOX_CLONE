@@ -16,5 +16,5 @@ Price.addEventListener("click",function(){
 })
 let login = document.querySelector('#login');
 login.addEventListener("click",function(){
-    location.href = "../login/index.html"
+   window.location.href = "../login/index.html"
 })
