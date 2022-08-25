@@ -42,6 +42,7 @@ li{
     /* border: 1px solid black; */
     padding: 3px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
 }
 /* #navbarbottom>div{
     border: 1px solid blue;
@@ -98,6 +99,6 @@ justify-content: flex-end;
 }
 #feat{
     position: absolute;
-    top: 61px;
+    top: 68px;
     
 }
