@@ -1,0 +1,211 @@
+#main_content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 100px;
+    margin-top:100px;
+}
+#form_fill{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    /* padding: 30px; */
+    margin: auto;
+}
+
+body{
+    background-color: rgb(49, 42, 42);
+
+}
+
+#demo_form{
+    background-color: white;
+}
+.demo_content{
+   margin-top:100px;
+   width: 41%;
+}
+.demo_content>p{
+  font-size: 26px;
+  color: white;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rating_star_hide_mobile{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px ;
+   margin-bottom: 10px;
+   background-color: rgb(8, 8, 11);
+   color: white;
+   padding: 15px 0px 15px 15px;
+   border-radius: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 20px;
+}
+#demo_page>ul{
+list-style: none;
+display: flex;
+justify-content: space-between;
+width: 80%;
+margin: auto;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#demo_page_content{
+    width: 85%;
+    /* border: 1px solid greenyellow; */
+    margin: auto;
+    margin-top: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.demo_content>ul{
+   
+    line-height: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: -20px;
+    
+}
+.demo_content>ul>li::marker{
+    color: green;
+    font-size: 1em;
+    content: "\f058";
+    font-family: 'Font Awesome 5 Free';
+    background:aqua;
+    font-weight: 600;
+}
+.demo_content>ul>li{
+   padding-left: 10px;
+}
+#demo_form{
+    width: 43%;
+    margin-top: 25px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+#demo_form>p:first-child{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight:500;
+}
+.form_input,.form_input1,.form_input2,.form_input3{
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.placeholder,.placeholder1,.placeholder2,.placeholder3{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 15px;
+    left:15px;
+}
+.placeholder1{
+    top: 75px;
+}
+.placeholder2{
+    top: 135px;
+}
+.placeholder3{
+    top: 200px;
+}
+
+.form_input1:focus + .placeholder1,
+.form_input1:valid + .placeholder1{
+    top: 50px;
+    background-color: #fff;
+}
+.form_input2:focus + .placeholder2,
+.form_input2:valid + .placeholder2{
+    top: 110px;
+    background-color: #fff;
+}
+.form_input3:focus + .placeholder3,
+.form_input3:valid + .placeholder3{
+    top: 170px;
+    background-color: #fff;
+}
+.form_input:focus + .placeholder,
+.form_input:valid + .placeholder{
+    top: -10px;
+    background-color: #fff;
+}
+#agentCount,#clientRegion,#industry_name,#company_size{
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 95%;
+    box-sizing: border-box;
+}
+#select1,#select2,#select3,#select4{
+    position: absolute;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 255px;
+    left:15px;
+}
+#select2{
+    top: 315px;
+}
+#select3{
+    top: 375px;
+}
+#select4{
+    top: 425px;
+}
+#company_size:focus + #select1,
+#company_size:valid + #select1{
+    top: 230px;
+    background-color: #fff;
+}
+#industry_name:focus + #select2,
+#industry_name:valid + #select2{
+    top: 290px;
+    background-color: #fff;
+}
+#agentCount:focus + #select3,
+#agentCount:valid + #select3{
+    top: 350px;
+    background-color: #fff;
+}
+#clientRegion:focus + #select4,
+#clientRegion:valid + #select4{
+    top: 410px;
+    background-color: #fff;
+}
+#form_submit{
+    width:95%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border:0px;
+    background-color: rgb(150, 35, 35);
+    padding: 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+ 
+}
+#form_submit:hover{
+    background-color: red;
+}
+@media screen and (max-width: 1000px) { 
+    .rating_star_hide_mobile{
+        display: none;
+    }
+}

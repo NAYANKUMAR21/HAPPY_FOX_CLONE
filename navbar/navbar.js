@@ -10,11 +10,11 @@ window.addEventListener("scroll",function(){
     }
 })
 
-let price = document.querySelector('#priceing');
-price.addEventListener("click",function(){
+let Price = document.querySelector('#priceing');
+Price.addEventListener("click",function(){
     location.href = "../pricing/pricing.html"
 })
 let login = document.querySelector('#login');
 login.addEventListener("click",function(){
-    location.href = "../myTask/index.html"
+    location.href = "../login/index.html"
 })
