@@ -17,16 +17,22 @@ let signupBtn = document.getElementById("prefooterButton");
     return alert("signup Sucessfull");
   };
 
-//   let videoPlay=document.getElementById('playVideo');
-//   videoPlay.onclick=(event)=>{
-//     playVideo();
-//   }
+  // let videoPlay=document.getElementById('playVideo');
+  // videoPlay.onclick=(event)=>{
+  //   playVideo();
+  // }
 
 //  let playVideo=()=>{
+//   // videoPlay.innerHTML="";
 
-//     let player=document.getElementById('container')
-//     let iframe=document.getElementById('iframe')
+//   //   let iframe=document.getElementById('iframe')
+//   //   videoPlay.innerHTML=iframe;
+
+    
 //     // player.innerHTML= 
 // console.log("play")
 //   }
 
+
+
+document.querySelector("#carousel-custom-dots")
