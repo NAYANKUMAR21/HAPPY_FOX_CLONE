@@ -20,18 +20,18 @@
                 <li><span>Customer Service</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
             </ul>
         </div>
-        <div>
+        <div id="itSupport">
             <ul>
                 <li><span>IT Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
             </ul>
         </div>
-        <div>
+        <div id="operations">
             <ul>
                 <li><span>Operations Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
             </ul>
         </div>
     </div>
-    <div>
+    <div id="login">
         <ul>
             <li>login</li>
         </ul>
@@ -45,19 +45,20 @@
             <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="navbar_symbol">
         </div>
         <div id="lower_dropdown">
-            <div>
+            <div id="features">
                 <ul>
                     <li><span>Features</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
                 </ul>
             </div>
-            <div>
+            <div id="Solutions">
                 <ul>
                     <li><span>Solutions</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
                 </ul>
             </div>
-            <div>
+            <div id="priceing">
                 <ul>
-                    <li><span>pricing</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                    <li><span>pricing</span></li>
+                    <!-- <a href="../pricing/pricing.html">pricing</a> -->
                 </ul>
             </div>
             <div>
@@ -68,26 +69,34 @@
         </div>
         <div>
             
-                <button><a href="">Get a Demo</a></button>
+                <button><a href="../Demo/demo.html">Get a Demo</a></button>
             
         </div>
         </div>
     </div>
     <div id="feat"></div>
+    <div id="bottom_navbar">-</div>
     <div id="body"></div>
 </body>
 </html>
 <script src="navbar.js"></script>
 <script type="module">
-    import {drop} from './components/dropdown.js'
+    import {drop,support,operations,features,solutions} from './components/dropdown.js'
    //console.log(drop)
+  
+    console.log(features)
    let n = 0
+   let o = 0
+   let p = 0
+   let q = 0
+   let r = 0;
    let feat = document.querySelector('#customerService');
-   feat.addEventListener("click",main)
+   feat.addEventListener("click",main1)
 
-   function main(){
+   function main1(){
        n++
-       
+       document.getElementById("feat").innerHTML = ""
+       document.getElementById("bottom_navbar").innerHTML = ""
        if(n%2!==0){
            let x = drop()
         document.getElementById("feat").innerHTML = drop()
@@ -100,5 +109,67 @@
        }
       
    }
+
+   let Support = document.querySelector('#itSupport');
+   Support.addEventListener("click",main2)
+   function main2(){
+    o++
+    document.getElementById("feat").innerHTML = ""
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(o%2!==0){
+        document.getElementById("feat").innerHTML = support()
+        document.getElementById("feat").style.backgroundColor = "white"
+    }else if(o%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+   }
+
+   let Operate = document.querySelector('#operations');
+   Operate.addEventListener("click",main3)
+
+   function main3(){
+    p++
+    document.getElementById("feat").innerHTML = ""
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(p%2!==0){
+        document.getElementById("feat").innerHTML = operations()
+        document.getElementById("feat").style.backgroundColor = "white"
+    }else if(p%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+   }
+
+   let speci1 = document.querySelector('#features');
+   speci1.addEventListener("click",main4)
+   function main4(){
+    q++
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(q%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = features()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(q%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
+    let speci2 = document.querySelector('#Solutions');
+   speci2.addEventListener("click",main5)
+   function main5(){
+    r++
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(r%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = solutions()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(r%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
    
 </script>
