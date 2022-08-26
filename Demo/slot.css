@@ -21,3 +21,12 @@ table th,table td{
   padding: 8px 15px;
   border: 4px solid white;
 }
+button{
+    background-color: rgb(17, 120, 230);
+    padding: 10px 20px;
+    border: 0px solid white;
+    margin-left: 10px;
+}
+h5{
+    font-size: large;
+}
