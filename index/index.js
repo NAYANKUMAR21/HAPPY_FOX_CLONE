@@ -17,22 +17,27 @@ let signupBtn = document.getElementById("prefooterButton");
     return alert("signup Sucessfull");
   };
 
-  // let videoPlay=document.getElementById('playVideo');
-  // videoPlay.onclick=(event)=>{
-  //   playVideo();
-  // }
 
-//  let playVideo=()=>{
-//   // videoPlay.innerHTML="";
+//   let option=document.getElementsByClassName('hometab-link')
 
-//   //   let iframe=document.getElementById('iframe')
-//   //   videoPlay.innerHTML=iframe;
+//    let divItem=document.getElementsByClassName('hometab-content')
+// //  console.log('divItem:', divItem)
 
-    
-//     // player.innerHTML= 
-// console.log("play")
+
+//  for(let i=0;i<option.length;i++){
+//   let ele=option[i];
+//   ele.onclick=(event)=>{
+
+//     let showData=divItem[i];
+//     showSlide(showData)
+//     // console.log('showData:', showData)   
 //   }
+//  }
+ 
 
+//  function showSlide(i){
+//   console.log(i);
+   
+//  }
 
-
-document.querySelector("#carousel-custom-dots")
+ 
