@@ -61,7 +61,7 @@
                     <!-- <a href="../pricing/pricing.html">pricing</a> -->
                 </ul>
             </div>
-            <div>
+            <div id="resourse">
                 <ul>
                     <li><span>Resources</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
                 </ul>
@@ -75,13 +75,13 @@
         </div>
     </div>
     <div id="feat"></div>
-    <div id="bottom_navbar">-</div>
+    <div id="bottom_navbar"></div>
     <div id="body"></div>
 </body>
 </html>
 <script src="navbar.js"></script>
 <script type="module">
-    import {drop,support,operations,features,solutions} from './components/dropdown.js'
+    import {drop,support,operations,features,solutions,resourse} from './components/dropdown.js'
    //console.log(drop)
   
     console.log(features)
@@ -90,6 +90,7 @@
    let p = 0
    let q = 0
    let r = 0;
+   let s = 0;
    let feat = document.querySelector('#customerService');
    feat.addEventListener("click",main1)
 
@@ -166,6 +167,20 @@
         document.getElementById("bottom_navbar").innerHTML = solutions()
         document.getElementById("bottom_navbar").style.backgroundColor = "white"
     }else if(r%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
+    let speci3 = document.querySelector('#resourse')
+    speci3.addEventListener("click",main6);
+    function main6(){
+        s++
+        document.getElementById("bottom_navbar").innerHTML = ""
+    if(s%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = resourse()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(s%2==0){
            // document.body.innerHTML = ""
            document.getElementById("bottom_navbar").innerHTML = ""
            //console.log(n)
