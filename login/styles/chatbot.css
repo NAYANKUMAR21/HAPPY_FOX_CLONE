@@ -1,0 +1,123 @@
+body {
+  background-color: #1e2022;
+  font-family: hero-new, sans-serif;
+}
+.signup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+.signup p {
+  color: #919293;
+  padding-right: 20px;
+}
+.signup a {
+  background-color: #1e2022;
+  margin-right: 35px;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  font-size: 15px;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login_container {
+  width: 300px;
+  height: 390px;
+  margin-top: 6%;
+  background-color: #ffffff;
+}
+#login_container > img {
+  width: 60px;
+  height: 60px;
+  margin-left: 115px;
+  margin-top: -35px;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+#header > p:last-child {
+  font-weight: bold;
+  padding-left: 5px;
+}
+#desc {
+  margin-left: 20px;
+}
+#desc p {
+  font-weight: bold;
+  color: #656565;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input {
+  border-radius: 0px;
+  width: 245px;
+  height: 30px;
+  border: 0.1px solid #656565;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+#checkbox {
+  width: 15px;
+  margin-left: 40px;
+}
+#checkbox + p {
+  font-size: 14px;
+  color: #656565;
+  margin-left: 65px;
+  margin-top: -33px;
+}
+#login {
+  width: 260px;
+  height: 40px;
+  margin-left: 20px;
+  background-color: #3d9c26;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+#login + a {
+  text-decoration: none;
+  color: #466d91;
+  margin-left: 98px;
+  font-size: 14px;
+}
+#login + a:hover {
+  text-decoration: underline;
+}
+#google {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#google div {
+  width: 230px;
+  height: 45px;
+  border: 1px solid blue;
+  margin-top: 20px;
+  background-color: #4285f4;
+}
+#google img {
+  width: 44px;
+}
+#google p {
+  color: white;
+  margin-left: 65px;
+  margin-top: -35px;
+}
+#google + a {
+  text-decoration: none;
+  margin-left: 700px;
+  color: #fff;
+  font-size: 14px;
+}
+#google + a:hover {
+  text-decoration: underline;
+}

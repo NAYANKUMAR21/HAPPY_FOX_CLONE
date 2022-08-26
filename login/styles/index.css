@@ -11,9 +11,6 @@
   font-weight: 100;
   line-height: 1.25;
 }
-/* #right {
-  border: 1px solid black;
-} */
 h1 {
   color: #323643;
   padding-top: 130px;
@@ -67,8 +64,6 @@ hr {
   margin-top: 45px;
 }
 .login h2 {
-  /* padding-left: 70px; */
-  /* margin-top: -40px; */
   color: black;
   font-size: 24px;
   font-weight: lighter;
@@ -88,4 +83,43 @@ hr {
   border-radius: 20px;
   font-size: 15px;
   background-color: #f1eeee;
+  cursor: pointer;
+}
+#right {
+  position: relative;
+}
+#chatbot {
+  width: 300px;
+  height: 150px;
+  margin-top: 8%;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+  opacity: 0.9;
+  margin-left: 8%;
+}
+#chatbot div {
+  display: flex;
+  justify-content: space-between;
+}
+#chatbot a {
+  text-decoration: none;
+  background-color: #ed8914;
+  padding: 6px 12px;
+  color: white;
+}
+#chatbot h3 {
+  font-size: 22px;
+  font-weight: lighter;
+  margin-top: 10%;
+}
+#chatbot button {
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  background-color: white;
+  margin-top: -5%;
+  color: #ed8914;
+  cursor: pointer;
 }
