@@ -422,6 +422,9 @@
 #parent_solutions{
     /* border: 1px solid black; */
 display: flex;
+/* border: 1px solid black; */
+margin: auto;
+width: 150%;
 background-color:  rgb(252, 252, 252);
 }
 #parent_solutions>div:nth-child(1){
@@ -439,7 +442,7 @@ background-color:  rgb(252, 252, 252);
     
 }
 #parent_solutions>div:nth-child(2){
-    width:35%;
+    width:40%;
     /* border: 1px solid black; */
     padding-left: 30px;
     background-color: #f4f6f6;
@@ -449,7 +452,7 @@ background-color:  rgb(252, 252, 252);
 display: grid;
 grid-template-columns: repeat(3,25%);
 grid-template-rows: repeat(4,1fr);
-gap:20px 70px;
+gap:20px 50px;
 padding-left: 150px;
 }
 
@@ -462,7 +465,7 @@ padding-left: 150px;
     margin-left: 10px;
 }
 #teams{
-    margin-top: 120px;
+    margin-top: 60px;
 }
 
 #parent_resourses{
