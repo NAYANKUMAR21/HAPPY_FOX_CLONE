@@ -481,3 +481,44 @@ img {
     display: none;
     overflow: hidden;
 }
+.pricing-more-products{
+    width: 95%;
+    margin: auto;
+}
+.pricing-more-products h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+.more-products{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    text-align: center;
+    margin: auto;
+}
+.more-products img{
+    width: 90px;
+    height: 80px;
+}
+.product-showcase{
+    padding: 10px;
+}
+.product-showcase:hover{
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-showcase h4 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.product-showcase p {
+    font-size: 16px;
+    color: #555;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
