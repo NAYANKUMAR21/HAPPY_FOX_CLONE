@@ -102,3 +102,6 @@ justify-content: flex-end;
     top: 68px;
     
 }
+#bottom_navbar{
+    position: absolute;
+}
