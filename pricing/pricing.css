@@ -204,6 +204,12 @@ button {
     height: auto;
 }
 .mighty-box {
+    width: 25%;
+    background: #fff;
+    position: relative;
+    transition: all .2s ease-in;
+    /* border-top: 1px solid #eee; */
+    padding-bottom: 10px;
     border-left: 1px solid #eee;
     padding-top: 0;
     border-top: none;
@@ -273,6 +279,11 @@ sup {
     line-height: 0;
     vertical-align: baseline;
 }
+.pricing-feature-list li:first-child {
+    list-style: none;
+    font-weight: 500;
+    position: relative;
+}
 .pricing-feature-list li {
     width: 100%;
     text-align: left;
@@ -282,4 +293,232 @@ sup {
     margin-bottom: 15px;
     list-style: circle;
     margin-left: 8px;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+.pricing-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+.pricing-button-container {
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 30px;
+}
+.pricing-button:hover{
+    color: #f5f4f4;
+    background-color: #ff6200;
+}
+.mighty-box:hover{
+    box-shadow: 0 20px 10px 0 rgb(0 0 0 / 8%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.compare-plans-icon {
+    margin: auto;
+    text-align: center;
+    display: block;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+.compare-plans-icon p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    transition: all .2s ease-in;
+    padding: 40px 0;
+    background: #f8f8f8;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.col-md-12.header-row {
+    display: flex;
+    padding: 30px 0 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(152, 157, 173, 0.2);
+}
+.table-title {
+    width: 31%;
+    padding-left: 10px;
+}
+.header-title {
+    font-size: 20px;
+    color: #6d717e;
+    font-weight: 400;
+}
+.table-column {
+    width: 16%;
+    font-size: 16px;
+    color: #797879;
+    font-weight: 300;
+}
+.plan-title {
+    font-size: 25px;
+    font-weight: 600;
+    float: left;
+    width: 100%;
+    color: #323643;
+}
+.pricing-table-sub-header {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.plain-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+}
+.pricing-feature-name {
+    font-size: 16px;
+    color: #323643;
+    font-weight: 300;
+}
+.pricing-tick {
+    width: 20px;
+    height: 20px;
+    background: url(https://assets.www.happyfox.com/v2/images/pricing-tick.svg) no-repeat left top;
+}
+.feature-status {
+    font-size: 16px;
+    color: #797879;
+    font-weight: 300;
+}
+.plain-row:hover{
+    background-color: #fafafa;
+}
+.faq-container {
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 60px;
+    padding: 60px 100px;
+    box-shadow: 0 20px 10px 0 rgb(0 0 0 / 8%);
+}
+.faq-container h3{
+    text-align: center;
+}
+.pricing-table-features{
+    color: #323643;
+}
+.frequent-questions {
+    display: table;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0 20px;
+}
+.frequent-questions .question-row:first-child {
+    margin-top: 0;
+}
+.question-row {
+    /* margin-top: 70px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.question-column {
+    width: 100%;
+    cursor: pointer;
+    /* padding: 30px 0; */
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.question-column h6 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-style: none;
+}
+.question-column p {
+    font-size: 16px;
+    color: #6d717e;
+    line-height: 30px;
+    font-weight: 300;
+    margin-top: 12px;
+    display: none;
+    overflow: hidden;
+}
+.pricing-more-products{
+    width: 95%;
+    margin: auto;
+}
+.pricing-more-products h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+.more-products{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    text-align: center;
+    margin: auto;
+}
+.more-products img{
+    width: 90px;
+    height: 80px;
+}
+.product-showcase{
+    padding: 10px;
+}
+.product-showcase:hover{
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-showcase h4 {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.product-showcase p {
+    font-size: 16px;
+    color: #555;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
