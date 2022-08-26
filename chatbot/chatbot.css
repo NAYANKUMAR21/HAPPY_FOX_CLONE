@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#chatbot_icon{
+    position: absolute;
+    top: 89%;
+    left: 90%;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #06181f;
+}
+#message_icon{
+    width: 40px;
+    position: relative;
+    top: 25%;
+    left: 23%;
+}
+#message_icon path{
+ fill: transparent;
+ stroke-width: 10;
+ stroke:#31e8ff;
+ stroke-dasharray: 1610;
+ stroke-dashoffset: 0;
+}
+#message_icon:hover path{
+    animation: animate-icon 2s linear forwards ;
+}
+@keyframes animate-icon{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1610;
+    }
+    80%{
+        stroke-dashoffset: 3220;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3220;
+        fill:#31e8ff ;
+    }
+}
+#outer_box{
+    width:400px;
+    height:500px;
+    margin: auto;
+    background-color: #4c29e7;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid black;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 20;
+    display: none;
+}
+#outer_box>p{
+    text-align: center;
+    margin-top: 5px;
+    
+}
+span{
+  position: relative;
+  font-size: 20px;
+  left: 30%;
+}
+#inner_box{
+    width: 400px;
+    height: 450px;
+    margin-top: 22px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: white;
+}

@@ -1,0 +1,37 @@
+*{
+   
+    color: white;
+}
+body{
+    background-color: rgb(34, 28, 28);
+}
+
+.rating_star{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 15px ;
+    margin-bottom: 10px;
+    background-color: rgb(8, 8, 11);
+    color: white;
+    padding: 15px 0px 15px 15px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+ }
+ #paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+ #heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+ }
+#logo{
+    margin-top: 50px;
+    text-align: center;
+}

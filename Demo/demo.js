@@ -2,7 +2,7 @@ let form_button = document.getElementById("form_submit");
 form_button.addEventListener("click", () => {
   validateData();
 });
-
+let userData = {};
 function validateData() {
   let name = document.querySelector(".form_input").value;
   let email = document.querySelector(".form_input1").value;
@@ -12,7 +12,11 @@ function validateData() {
   let select2 = document.getElementById("industry_name").value;
   let select3 = document.getElementById("agentCount").value;
   let select4 = document.getElementById("clientRegion").value;
- 
+ userData={
+  name,
+  email
+ }
+ localStorage.setItem("userdata",JSON.stringify(userData));
   if(name !== null && email !== null && phone !== null && company !== null && select1 != -1
     && select3 != -1 && select2 != -1 && select4 != -1){
         location.href="./slot.html";
