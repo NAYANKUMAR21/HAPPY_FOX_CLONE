@@ -13,10 +13,27 @@
     background-color: #06181f;
 }
 #message_icon{
-    width: 40px;
+    
     position: relative;
     top: 25%;
     left: 23%;
+    z-index: 2;
+    
+}
+#downward_arrow{
+    
+    position: relative;
+    top: 30%;
+    left: 28%;
+    z-index: 2;
+    display: none;
+}
+#downward_arrow path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke:#31e8ff;
+    stroke-dasharray: 1370;
+    stroke-dashoffset: 0;
 }
 #message_icon path{
  fill: transparent;
@@ -25,10 +42,31 @@
  stroke-dasharray: 1610;
  stroke-dashoffset: 0;
 }
+#downward_arrow:hover path{
+    animation: animate-arrow 2s linear forwards ;
+}
 #message_icon:hover path{
     animation: animate-icon 2s linear forwards ;
 }
 @keyframes animate-icon{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1370;
+    }
+    80%{
+        stroke-dashoffset: 2740;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 2740;
+        fill:#31e8ff ;
+    }
+}
+@keyframes animate-arrow{
     0%
     {
         stroke-dashoffset: 0;
@@ -78,4 +116,67 @@ span{
     margin-top: 22px;
     border-radius: 25px 25px 25px 25px;
     background-color: white;
+    color: black;
+    overflow: scroll;
+}
+.first_message,.second_message,.third_message,.fourth_message,.fifth_message,.sixth_message{
+display: flex;
+padding-top: 10px;
+}
+.first_message>img,.second_message>img,.third_message>img,.fourth_message>img,.fifth_message>img,.sixth_message>img{
+   margin-left: 10px;
+}
+.first_message>p,.second_message>p,.third_message>p,.fourth_message>p,.fifth_message>p,.sixth_message>p{
+    width: 60%;
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.ask_que,.ask_que1,.ask_que2{
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   grid-gap: 10px;
+
+}
+.ask_que>p,.ask_que1>p,.ask_que2>p{
+    padding: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.right{
+    float: right;
+    color: black;
+    margin-right: 10px;
+}
+.right>p{
+    padding: 15px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #4c29e7;
+    color: white;
+    border-radius: 35px 30px 0px 35px ;
+}
+.sales,.bookDemo,.justBrowse,.existin,.second_message,.ask_que1,#chat_form,.third_message,.fourth_message,.fifth_message,.sixth_message,#que_form,.helpdesomit{
+    display: none;
+}
+#chat_form,#que_form{
+    text-align: left;
+    margin-left: 30px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px; 
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#chatbot_submit,#question_submit{
+   padding: 8px 25px;
+   border: none;
+   box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   background-color: #4c29e7;
+   color: white;
+   border-radius: 10px;
+   margin-top:10px ;
 }
