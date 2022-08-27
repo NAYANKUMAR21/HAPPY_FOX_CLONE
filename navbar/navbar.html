@@ -7,8 +7,10 @@
     <title>navbar</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
+    
  <div id="parentTop"> 
     <div id="navbarTop">
     <div>
@@ -17,17 +19,17 @@
     <div id="upper_dropdown">
         <div id="customerService">
             <ul>
-                <li><span>Customer Service</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                <li>Customer Service</li>
             </ul>
         </div>
         <div id="itSupport">
             <ul>
-                <li><span>IT Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                <li>IT Support</li>
             </ul>
         </div>
         <div id="operations">
             <ul>
-                <li><span>Operations Support</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                <li>Operations Support</li>
             </ul>
         </div>
     </div>
@@ -40,6 +42,11 @@
 </div>
 
     <div id="parentBottom">
+        <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times" id="cancel"></i>
+    </label>
         <div id="navbarbottom">
         <div>
             <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="navbar_symbol">
@@ -47,27 +54,27 @@
         <div id="lower_dropdown">
             <div id="features">
                 <ul>
-                    <li><span>Features</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                    <li>Features</li>
                 </ul>
             </div>
             <div id="Solutions">
                 <ul>
-                    <li><span>Solutions</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                    <li>Solutions</li>
                 </ul>
             </div>
             <div id="priceing">
                 <ul>
-                    <li><span>pricing</span></li>
+                    <li>Pricing</li>
                     <!-- <a href="../pricing/pricing.html">pricing</a> -->
                 </ul>
             </div>
             <div id="resourse">
                 <ul>
-                    <li><span>Resources</span><img src="//assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt="arrow1"></li>
+                    <li>Resourse</li>
                 </ul>
             </div>
         </div>
-        <div>
+        <div id="demo">
             
                 <button><a href="../Demo/demo.html">Get a Demo</a></button>
             
@@ -79,6 +86,7 @@
     <div id="body"></div>
 </body>
 </html>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="navbar.js"></script>
 <script type="module">
     import {drop,support,operations,features,solutions,resourse} from './components/dropdown.js'
