@@ -149,7 +149,7 @@
     background-image: url(https://assets.www.happyfox.com/v2/images/version_2_cover_new.jpg);
     background-size: 100% 100%;
     margin: 0 auto;
-    /* background: #fdfdfd; */
+    background: #fdfdfd;
     box-shadow: 0 13px 25px 0rgb (0 0 0 / 20%);
     border-radius: 10px;
     position: relative;
@@ -214,15 +214,13 @@ iframe {
 
 
 
-  .hf-home__video-wrap .container,
+  
   .hf-home__video-wrap .container {
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
-  .hf-home__video-wrap .container {
     padding: 0;
   }
+
   .hf-home__award-video {
     padding: 70px 0;
   }
@@ -326,7 +324,7 @@ iframe {
 .row {
   display: -ms-flexbox;
   display: flex;
-  /* -ms-flex-wrap: wrap; */
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -339,17 +337,7 @@ iframe {
     padding-left: 15px;
 
 }
-.customer-support .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  /* border: 1px solid red; */
-} 
+
 .customer-support h3{
   margin-top: 0;
   color: #323643;
@@ -380,13 +368,14 @@ iframe {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.customer-support p.support-text{
+.customer-support p
+.support-text{
   font-weight: 300;
   color: #6d717e;
   text-align: center;
   margin: 0 auto 70px;
-  font-size: 26px;
-  /* line-height: 24px; */
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 30px;
 
 }
@@ -399,7 +388,7 @@ iframe {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  gap: 60px;
+  /* gap: 60px; */
   
 } 
 ul {
@@ -449,7 +438,7 @@ li {
 }
 
 .owl-carousel {
-  /* display: none; */
+  display: none;
   width: 100%;
   z-index: 1;
 }
@@ -465,7 +454,7 @@ li {
 .owl-stage{
 transform: translate3d(-1040px, 0px, 0px);
 transition: all 0s ease 0s;
-width: 3640px;
+/* width: 3640px; */
 } 
 .owl-item .cloned{
   width: 510px;
@@ -480,16 +469,14 @@ width: 3640px;
   float: left;
   backface-visibility: hidden;
   transform: translate3d(0,0,0);
-   /* highlite-color: transparent;   */
-    position: relative;
+  position: relative;
 }
 .hometab-content {
   display: flex;
-  flex-wrap: nowrap; 
-  flex-direction: column; 
-   align-items: center;
+ flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  margin: 30px auto 0;
+  margin: 30px auto 0; 
   max-width: 1160px;
 }
 

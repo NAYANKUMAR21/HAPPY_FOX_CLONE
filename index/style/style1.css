@@ -45,7 +45,9 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
+h3{
+    color:#363636; 
+}
 
 p {
     display: block;
@@ -65,7 +67,7 @@ p {
     text-align: center;
     font-size: 32px;
     font-weight: 300;
-    color: #fff;
+    /* color: #fff; */
     margin-top: 130px;
 }
 
@@ -79,8 +81,8 @@ p {
 
 
 .container {
-    margin: auto;
-    margin: 0px 100px;
+    /* margin: auto;
+    margin: 0px 100px; */
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -110,10 +112,6 @@ p {
 
 .hf-home__video-wrap .container {
     background-image: url(../images/Cover_option_1.png);
-}
-
-.hf-home__video-wrap .container {
-    padding: 0;
 }
 
 .hf-home__video-wrap .container {
@@ -282,9 +280,15 @@ a:-webkit-any-link {
     border-radius: 4px;
     float: left;
     color: #fff;
+    background-color: #fff;
     width: 48%;
     transition: all .3s ease;
     margin: 0 40px 40px 0;
+}
+.list-one:hover{
+    color: #fff;
+/* transform: translate3d(2px -2px 2px);
+transition: all .3s ease; */
 }
 .feature-list .list-icon, .roi-lists .list-icon {
     float: left;
@@ -366,20 +370,17 @@ a:-webkit-any-link {
 .happyfox-apps, .helpdesk-features {
     background: linear-gradient(#fff,#f3f6f8,#fff);
 }
-.happyfox-apps {
-    margin: 150px 0;
-}
-.happyfox-apps h3{
-    color: #323643;
-}
+/* .happyfox-apps {
+    margin: px 0;
+} */
+
+    
 .happyfox-apps h3{
     margin-top: 0;
-}
-.happyfox-apps h3{
     text-align: center;
     font-size: 32px;
     font-weight: 300;
-    color: #fff;
+    color: #323643;
     margin-top: 130px;
 }
 
@@ -425,9 +426,9 @@ li {
     text-align: match-parent;
 }
 
-/* .owl-carousel.owl-loaded {
+ .owl-carousel.owl-loaded {
     display: block;
-}
+} 
 .owl-carousel {
     display: none;
     width: 100%;
@@ -438,27 +439,39 @@ li {
 .owl-carousel .owl-stage-outer {
     padding-bottom: 50px;
     z-index: 9;
+    
 }
 .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    -webkit-transform: translate3d(0,0,0);
+    /* -webkit-transform: translate3d(0,0,0); */
 }
 #testimonialCarousel.owl-carousel .owl-stage {
     display: flex;
+    
 }
 .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
-    -moz-backface-visibility: hidden;
-} */
+    
+} 
+.client-feedback{
+    margin: auto;
+    width: 500px;
+    padding: 40px;
+    font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+.client-feedback>p{
+    color: #323643;
+}
 
-
-
-
-
-@media(max-width:767px) {
+@media all and (min-width:320px) and (max-width:480px){
+    .container {
+        margin: auto;
+        max-width: 300px;
+    }
     .signup-banner {
         flex-direction: column;
     }
@@ -483,15 +496,20 @@ li {
         font-size: 14px;
         border-right: 2px solid #f16631;
     }
+    .hometab-slider__list {
+        margin-top: 40px;
+    }
 
     footer {
         margin-top: 0;
     }
-   
 }
+/* @media(max-width:767px) {
+   
+   
+} */
 
-    
-@media (max-width: 768px){
+ @media all and (min-width:481px) and (max-width:768px){
     .container {
         max-width: 540px;
     }
@@ -515,71 +533,124 @@ li {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .footer-bottom-links {
+        margin-bottom: 10px;
+    }
+    .footer-links .col-md-12 .footer-column:first-child, .footer-links .col-md-12 .footer-column:last-child, .footer-links .footer-column {
+        text-align: center;
+    }
     
-    }
+ }  
+/* @media (max-width: 768px){
+    
+    } */
 
-   
 
-
-
-    @media (max-width: 992px){
+@media all and (min-width:769px) and (max-width:992px){
     .container {
-            max-width: 720px;
-        }
-    .roi-section {
-        margin-top: -50px;
-        padding-bottom: 120px;
+        max-width: 720px;
     }
-    .roi-section h4 {
-        margin-top: 170px;
+.roi-section {
+    margin-top: -50px;
+    padding-bottom: 120px;
+}
+.roi-section h4 {
+    margin-top: 170px;
+}
+.roi-buttons{
+    margin-left:100px;
+    margin-top: 50px;
+  }
+.feature-list, .list-one {
+    width: 100%;
+    margin: 0 auto 40px;
+    float: none;
+    display: block;
+}
+.helpdesk-features p, .roi-lists .list-text p {
+    font-size: 15px;
+}
+.roi-lists .list-text p {
+    line-height: 25px;
+    color: #d2d2d2;
+    font-weight: 300;
+    width: 100%;
+}
+.copy-right-text, .footer-bottom-links, .footer-social-icons {
+    max-width: 100%;
+    flex: none;
+    text-align: center;
+}
+.new-container {
+    max-width: 720px;
+}
+.footer-links .col-md-12 {
+    flex-wrap: wrap;
+}
+.footer-links .col-md-12 .footer-column:first-child, .footer-links .col-md-12 .footer-column:last-child, .footer-links .footer-column {
+    width: 40%;
+    margin-right: 36px;
+}
+.bottom-footer {
+    padding-bottom: 30px;
+}
+}
+   
+/* @media (max-width: 992px){
+    
+    } */
+@media all and (min-width:993px) and (max-width:1200px){
+    .container {
+        max-width: 960px;
     }
-    .roi-buttons{
-        margin-left:100px;
-        margin-top: 50px;
-      }
-    .feature-list, .list-one {
-        width: 100%;
-        margin: 0 auto 40px;
-        float: none;
-        display: block;
-    }
-    .helpdesk-features p, .roi-lists .list-text p {
-        font-size: 15px;
-    }
-    .roi-lists .list-text p {
-        line-height: 25px;
-        color: #d2d2d2;
-        font-weight: 300;
-        width: 100%;
-    }
-    }
+.feature-list, .list-one {
+    padding: 40px 20px;
+    width: 450px;
+    margin: 0 30px 30px 0;
+}
+.feature-list, .list-one {
+    padding: 40px 20px;
+    width: 450px;
+    margin: 0 30px 30px 0;
+}
+.roi-buttons{
+    margin-left:225px;
+    margin-top: 50px;
+  }
+  .happyfox-apps ul li img {
+    margin-top: 42px;
+}
+.footer-bottom-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer-bottom-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.copy-right-text, .footer-bottom-links, .footer-social-icons {
+    width: 100%;
+    float: none;
+    flex: auto;
+    max-width: none;
+}
+.new-container {
+    max-width: 960px;
+}
+  
+}
+
+
+    
     
   
     
-    @media (max-width: 1200px){
+    /* @media (max-width: 1200px){
 
-        .container {
-            max-width: 960px;
-        }
-    .feature-list, .list-one {
-        padding: 40px 20px;
-        width: 450px;
-        margin: 0 30px 30px 0;
-    }
-    .feature-list, .list-one {
-        padding: 40px 20px;
-        width: 450px;
-        margin: 0 30px 30px 0;
-    }
-    .roi-buttons{
-        margin-left:225px;
-        margin-top: 50px;
-      }
-      .happyfox-apps ul li img {
-        margin-top: 42px;
-    }
-      
-    }
+
+    } */
     
    
  
