@@ -10,15 +10,112 @@
 <body>
     <div id="outer_box">
         <p>HappyFox<span id="startOver">...</span></p>
-        <div id="inner_box"></div>
+        <div id="inner_box">
+            <div class="first_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p>Hey there welcome to HappyFox. How can we help you today.</p>
+            </div>
+            <div class="ask_que">
+                <p onclick="salesQue()">I have a sales quetion</p>
+                <p onclick="bookDemo()">Book demo</p>
+                <p onclick="justBrowsing()">Just browsing</p>
+                <p onclick="existingCusto()">I am existing customer</p>
+            </div>
+            <!-- <div class="cus_mesg2 right"></div> -->
+            <div class="sales right"><p>I have a sales quetion</p></div>
+            <div class="bookDemo right"><p>Book Demo</p></div>
+            <div class="justBrowse right"><p>Just Browsing</p></div>
+            <div class="existin right"><p>I am existing customer</p></div>
+            <div class="second_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p>Which HappyFox product are you intrested in.</p>                
+            </div>
+            <div class="ask_que1">
+                 <p onclick="helpdesk()">Helpdesk</p>
+                 <p onclick="livechat()">Livechat</p>
+                 <p onclick="workflow()">Work Flows</p>
+                 <p onclick="chatbot()">Chatbot</p>
+                 <p onclick="Assitai()">Assist AI</p>
+                 <p onclick="mobilesdk()">Mobile SDK</p>
+                 <p onclick="bintelligence()">Business Intelligence</p>
+            </div>
+            <div class="helpdesk right"><p>Helpdesk</p></div>
+            <div class="livechat right"><p>Livechat</p></div>
+            <div class="workflow right"><p>Work Flows</p></div>
+            <div class="chatBot  right"><p>Chatbot</p></div>
+            <div class="assist right"><p>Assist AI</p></div>
+            <div class="mobile right"><p>Mobile SDK</p></div>
+            <div class="business right"><p>Business Intelligence</p></div>
+            <div class="third_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p>Great. Just in case we get disconnected, Please provide your name and email
+                    address</p>
+            </div>
+            <div id="chat_form">
+                <form action="" id="chatbot_entry">
+                    <h4>Your name</h4>
+                    <input type="text" id="chatbot_name">
+                    <h4>Your work email</h4>
+                    <input type="email" id="chatbot_email">
+                </form>
+                <button id="chatbot_submit">Submit</button>
+            </div>
+            <div class="fourth_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p id="give_message">Thank you, Please type in your question below .</p>
+            </div>
+            <div id="que_form">
+                <form action="" id="question_form">
+                    <textarea name="question" id="question_text" cols="40" rows="5"></textarea>
+                </form>
+                <button id="question_submit">submit</button>
+            </div>
+            <div class="fifth_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p>Do any of these question match</p>
+            </div>
+            <div class="ask_que2">
+                <p onclick="categories()">What are categories ?</p>
+                <p>What is happyfox waterflow</p>
+                <p>Quetion is not listed</p>
+            </div>
+            <div class="cus_mesg3 right"></div>
+            <div class="sixth_message left">
+                <img src="https://bot-widget.happyfox.com/assets/svgs/avatar-bbc0ae830e59e1c5946e.svg" alt="chatbot">
+                <p>Categories aloow you to separate incoming requests types that can be distributed to a specific team, have uniques SLA requirements metrics</p>
+                <P id="delay_msg">Did you find this answer helpful</P>
+            </div>
+            <div class="ask_que3">
+                <p onclick="helpful()">Helpful</p>
+                <p onclick="nothlpful()">Not Helpful</p>
+            </div>
+            <div id="conversation_end"><p>--convesation end--</p></div>
+        </div> 
+        <!-- inner box end -->
     </div>
+    <!-- outer box ended -->
     <div id="chatbot_icon">
-      <div id="message_icon">
+      <div id="message_icon" style="width: 40px;">
         <svg xmlns="http://www.w3.org/2000/svg"    viewBox="-5 0 561.096 531.096" 
         style="enable-background:new 0 0 512 512"><g><g xmlns="http://www.w3.org/2000/svg" id="Speech_Bubble_48_">
             <g><path d="m74.414 480.548h-36.214l25.607-25.607c13.807-13.807 22.429-31.765 24.747-51.246-59.127-38.802-88.554-95.014-88.554-153.944 0-108.719 99.923-219.203 256.414-219.203 165.785 0 254.682 101.666 254.682 209.678 0 108.724-89.836 210.322-254.682 210.322-28.877 0-59.01-3.855-85.913-10.928-25.467 26.121-59.973 40.928-96.087 40.928z" fill="#000000" data-original="#000000" class=""></path></g></g></g></svg>
         </div>
+        <div id="downward_arrow" style="width: 30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" 
+            viewBox="0 0 512.012 512.012" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path d="M505.325,129.52c-9.241-9.802-24.699-10.167-34.452-0.951l-214.88,203.566L41.138,128.57    
+                        c-9.753-9.241-25.187-8.851-34.452,0.951c-9.265,9.777-8.851,25.211,0.927,34.476l231.63,219.439  
+                          c4.681,4.438,10.728,6.681,16.75,6.681c6.022,0,12.093-2.243,16.775-6.681l231.63-219.439   
+                           C514.176,154.731,514.59,139.298,505.325,129.52z"
+                         fill="#000000" data-original="#000000" class=""></path>
+                    </g>
+                </g>
+                </g></svg>
+        </div>
     </div>
+
 </body>
 </html>
 <script src="./chatbot.js"></script>
