@@ -9,7 +9,7 @@ let signupBtn = document.getElementById("prefooterButton");
     if (email === "") {
       return false;
     }
-    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    if (!email.match(/^([\w-+.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)((\w+-?)+\w+\.)+[a-z]{2,})?$/)) {
       error.innerHTML = "Please enter a valid email";
       return false;
     }
@@ -17,27 +17,3 @@ let signupBtn = document.getElementById("prefooterButton");
     return alert("signup Sucessfull");
   };
 
-
-//   let option=document.getElementsByClassName('hometab-link')
-
-//    let divItem=document.getElementsByClassName('hometab-content')
-// //  console.log('divItem:', divItem)
-
-
-//  for(let i=0;i<option.length;i++){
-//   let ele=option[i];
-//   ele.onclick=(event)=>{
-
-//     let showData=divItem[i];
-//     showSlide(showData)
-//     // console.log('showData:', showData)   
-//   }
-//  }
- 
-
-//  function showSlide(i){
-//   console.log(i);
-   
-//  }
-
- 

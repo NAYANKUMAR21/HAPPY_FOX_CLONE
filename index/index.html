@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="./jquery/owl.carousel.css">
+<link rel="stylesheet" href="./jquery/owl.theme.green.css">
+
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./jquery/owl.carousel.min.js"></script>
   </head>
   <body>
     <div id="Navbar"><a href="">Navbar</a></div>
-    <div class="main">
+    <div class="hf-home__banner version_2">
       <div class="container">
         <div class="hf-home__banner-wrap">
           <div class="flex-parent align-center">
@@ -63,14 +73,26 @@
               </p>
               <div class="hf-home__video">
                 <div id="player">
-                  <iframe
+                  <a
+                    id="play-btn"
+                    href="https://www.youtube.com/watch?v=CGgPw0MSF3M"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <img
+                      class="ls-is-cached lazyloaded"
+                      src="//assets.www.happyfox.com/v2/images/ytube_play_button.svg"
+                      alt="youtube play button"
+                    />
+                  </a>
+                  <!-- <iframe
                     id="iframe"
                     src="https://www.youtube.com/embed/cD0FfdHdNis?rel=0&amp;showinfo=0&amp;autoplay=1"
                     frameborder="0"
                     allow="autoplay; encrypted-media"
                     allowfullscreen=""
                     title="HappyFox Help Desk Demo"
-                  ></iframe>
+                  ></iframe> -->
                 </div>
               </div>
             </div>
@@ -102,282 +124,998 @@
           </div>
         </div>
       </div>
-      <div class="brand-logos ptb-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="hf-body__para-heading hf-body__text-1">
-                Trusted by Industry-Leading Companies
-              </p>
-              <div class="hf-customers__list">
-                <img
-                  class="ls-is-cached lazyloaded"
-                  loading="lazy"
-                  src="//assets.www.happyfox.com/v2/logo/owler-logo.png"
-                  alt="owler"
-                  width="150"
-                  height="28.5"
-                />
-                <img
-                  class="ls-is-cached lazyloaded"
-                  loading="lazy"
-                  src="//assets.www.happyfox.com/v2/logo/whirlpool.svg"
-                  width="150"
-                  height="75"
-                  alt="whirlpool"
-                />
-                <img
-                  class="ls-is-cached lazyloaded"
-                  loading="lazy"
-                  src="//assets.www.happyfox.com/v2/logo/jabra.svg"
-                  width="150"
-                  height="76"
-                  alt="jabra"
-                />
-                <img
-                  class="ls-is-cached lazyloaded"
-                  loading="lazy"
-                  src="//assets.www.happyfox.com/v2/logo/leap-frog.svg"
-                  alt="Leap Frog"
-                  width="100"
-                  height="98.75"
-                  style="max-width: 100px"
-                />
-                <img
-                  class="ls-is-cached lazyloaded"
-                  loading="lazy"
-                  src="//assets.www.happyfox.com/v2/logo/harbour.svg "
-                  alt="Kindling"
-                  width="150"
-                  height="25"
-                />
-              </div>
+    </div>
+
+    <div class="brand-logos ptb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="hf-body__para-heading hf-body__text-1">
+              Trusted by Industry-Leading Companies
+            </p>
+            <div class="hf-customers__list">
+              <img
+                class="ls-is-cached lazyloaded"
+                loading="lazy"
+                src="//assets.www.happyfox.com/v2/logo/owler-logo.png"
+                alt="owler"
+                width="150"
+                height="28.5"
+              />
+              <img
+                class="ls-is-cached lazyloaded"
+                loading="lazy"
+                src="//assets.www.happyfox.com/v2/logo/whirlpool.svg"
+                width="150"
+                height="75"
+                alt="whirlpool"
+              />
+              <img
+                class="ls-is-cached lazyloaded"
+                loading="lazy"
+                src="//assets.www.happyfox.com/v2/logo/jabra.svg"
+                width="150"
+                height="76"
+                alt="jabra"
+              />
+              <img
+                class="ls-is-cached lazyloaded"
+                loading="lazy"
+                src="//assets.www.happyfox.com/v2/logo/leap-frog.svg"
+                alt="Leap Frog"
+                width="100"
+                height="98.75"
+                style="max-width: 100px"
+              />
+              <img
+                class="ls-is-cached lazyloaded"
+                loading="lazy"
+                src="//assets.www.happyfox.com/v2/logo/harbour.svg "
+                alt="Kindling"
+                width="150"
+                height="25"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div class="customer-support">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>Provide Exceptional</h3>
-              <h4>Customer Support. Everyday.</h4>
-              <p class="support-text">
-                Meet HappyFox, a practical help desk and customer support
-                software solution. Reduce chaos and bring order to your support
-                process with a robust support ticket system, self-service
-                knowledge base and community forums.
-              </p>
-              <div class="support-slider" id="tabSlider">
-                <div class="hometab-slider">
-                  <ul
-                    class="hometab-slider__list owl-dots"
-                    id="carousel-custom-dots"
-                  >
-                    <li class="hometab-item active">
-                      <div class="hometab-link" id="tabOne">
-                        Keep everything together
-                      </div>
-                    </li>
-                    <li class="hometab-item owl-dot">
-                      <div class="hometab-link" id="tabTwo">
-                        Stay in Control
-                      </div>
-                    </li>
-                    <li class="hometab-item owl-dot">
-                      <div class="hometab-link" id="tabThree">
-                        Get things done, fast
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="hometab-content__wrap owl-carousel owl-theme owl-loaded owl-drag"
-                  id="tabHomeCarousel"
+    </div>
+
+    <div class="customer-support">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Provide Exceptional</h3>
+            <h4>Customer Support. Everyday.</h4>
+            <p class="support-text">
+              Meet HappyFox, a practical help desk and customer support software
+              solution. Reduce chaos and bring order to your support process
+              with a robust support ticket system, self-service knowledge base
+              and community forums.
+            </p>
+            <div class="support-slider" id="tabSlider">
+              <div class="hometab-slider">
+                <ul
+                  class="hometab-slider__list owl-dots"
+                  id="carousel-custom-dots"
                 >
-                  <div class="owl-stage-outer">
-                    <div class="owl-stage">
-                      <div class="owl-item cloned">
-                        <div class="hometab-content iten" data-title="tabTwo">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/stay_control.svg"
-                              alt="HappyFox feature - Stay in Control"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “We LOVE HappyFox. It has changed our work lives.
-                              Support requests no longer fall through the cracks
-                              and get lost in an email or some random
-                              spreadsheet.”
-                            </h5>
-                            <p>Bill Bates</p>
-                            <p>
-                              Director of Technology - Pinewood Private School
-                            </p>
-                          </div>
+                  <li class="hometab-item active">
+                    <div class="hometab-link" id="tabOne">
+                      Keep everything together
+                    </div>
+                  </li>
+                  <li class="hometab-item owl-dot">
+                    <div class="hometab-link" id="tabTwo">Stay in Control</div>
+                  </li>
+                  <li class="hometab-item owl-dot">
+                    <div class="hometab-link" id="tabThree">
+                      Get things done, fast
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="hometab-content__wrap owl-carousel owl-theme owl-loaded owl-drag"
+                id="tabHomeCarousel"
+              >
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transform: translate3d(-1400px, 0px, 0px);
+                      transition: all 0s ease 0s;
+                      width: 4900px;
+                    "
+                  >
+                    <div
+                      class="owl-item cloned"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content iten" data-title="tabTwo">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/stay_control.svg"
+                            width="533"
+                            height="226"
+                            alt="HappyFox feature - Stay in Control"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “We LOVE HappyFox. It has changed our work lives.
+                            Support requests no longer fall through the cracks
+                            and get lost in an email or some random
+                            spreadsheet.”
+                          </h5>
+                          <p>Bill Bates</p>
+                          <p>
+                            Director of Technology - Pinewood Private School
+                          </p>
                         </div>
                       </div>
-                      <div class="owl-item cloned">
-                        <div class="hometab-content item" data-title="tabThree">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/things_fast.svg"
-                              alt="HappyFox feature - get things fast"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “With 95% of the support tickets being responded
-                              to within 2 hours. Our customers are impressed!”
-                            </h5>
-                            <p>James Powell</p>
-                            <p>
-                              Director &amp; IT Business Consultant - FatCat IT
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item cloned"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content item" data-title="tabThree">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/things_fast.svg"
+                            width="533"
+                            height="306"
+                            alt="HappyFox feature - get things fast"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “With 95% of the support tickets being responded to
+                            within 2 hours. Our customers are impressed!”
+                          </h5>
+                          <p>James Powell</p>
+                          <p>
+                            Director &amp; IT Business Consultant - FatCat IT
+                          </p>
                         </div>
                       </div>
-                      <div class="owl-item">
-                        <div class="hometab-content item" data-title="tabOne">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/keep_everything.svg"
-                              alt="HappyFox feature to keep evrything together"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “We consider HappyFox a one-stop shop for help
-                              desk software to support our global customer
-                              network”
-                            </h5>
-                            <p>Martin Hartvigsen</p>
-                            <p>
-                              Director, Global Technical Support at Jabra GN
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item active"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content item" data-title="tabOne">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/keep_everything.svg"
+                            width="533"
+                            height="289"
+                            alt="HappyFox feature to keep evrything together"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “We consider HappyFox a one-stop shop for help desk
+                            software to support our global customer network”
+                          </h5>
+                          <p>Martin Hartvigsen</p>
+                          <p>Director, Global Technical Support at Jabra GN</p>
                         </div>
                       </div>
-                      <div class="owl-item active">
-                        <div class="hometab-content iten" data-title="tabTwo">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/stay_control.svg"
-                              alt="HappyFox feature - Stay in Control"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “We LOVE HappyFox. It has changed our work lives.
-                              Support requests no longer fall through the cracks
-                              and get lost in an email or some random
-                              spreadsheet.”
-                            </h5>
-                            <p>Bill Bates</p>
-                            <p>
-                              Director of Technology - Pinewood Private School
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content iten" data-title="tabTwo">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/stay_control.svg"
+                            width="533"
+                            height="226"
+                            alt="HappyFox feature - Stay in Control"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “We LOVE HappyFox. It has changed our work lives.
+                            Support requests no longer fall through the cracks
+                            and get lost in an email or some random
+                            spreadsheet.”
+                          </h5>
+                          <p>Bill Bates</p>
+                          <p>
+                            Director of Technology - Pinewood Private School
+                          </p>
                         </div>
                       </div>
-                      <div class="owl-item">
-                        <div class="hometab-content item" data-title="tabThree">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/things_fast.svg"
-                              alt="HappyFox feature - get things fast"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “With 95% of the support tickets being responded
-                              to within 2 hours. Our customers are impressed!”
-                            </h5>
-                            <p>James Powell</p>
-                            <p>
-                              Director &amp; IT Business Consultant - FatCat IT
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content item" data-title="tabThree">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/things_fast.svg"
+                            width="533"
+                            height="306"
+                            alt="HappyFox feature - get things fast"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “With 95% of the support tickets being responded to
+                            within 2 hours. Our customers are impressed!”
+                          </h5>
+                          <p>James Powell</p>
+                          <p>
+                            Director &amp; IT Business Consultant - FatCat IT
+                          </p>
                         </div>
                       </div>
-                      <div class="owl-item cloned">
-                        <div class="hometab-content item" data-title="tabOne">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/keep_everything.svg"
-                              alt="HappyFox feature to keep evrything together"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “We consider HappyFox a one-stop shop for help
-                              desk software to support our global customer
-                              network”
-                            </h5>
-                            <p>Martin Hartvigsen</p>
-                            <p>
-                              Director, Global Technical Support at Jabra GN
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item cloned"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content item" data-title="tabOne">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/keep_everything.svg"
+                            width="533"
+                            height="289"
+                            alt="HappyFox feature to keep evrything together"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “We consider HappyFox a one-stop shop for help desk
+                            software to support our global customer network”
+                          </h5>
+                          <p>Martin Hartvigsen</p>
+                          <p>Director, Global Technical Support at Jabra GN</p>
                         </div>
                       </div>
-                      <div class="owl-item cloned">
-                        <div class="hometab-content iten" data-title="tabTwo">
-                          <div class="slider-screen">
-                            <img
-                              src="//assets.www.happyfox.com/v2/images/stay_control.svg"
-                              alt="HappyFox feature - Stay in Control"
-                            />
-                          </div>
-                          <div class="slider-content">
-                            <h5>
-                              “We LOVE HappyFox. It has changed our work lives.
-                              Support requests no longer fall through the cracks
-                              and get lost in an email or some random
-                              spreadsheet.”
-                            </h5>
-                            <p>Bill Bates</p>
-                            <p>
-                              Director of Technology - Pinewood Private School
-                            </p>
-                          </div>
+                    </div>
+                    <div
+                      class="owl-item cloned"
+                      style="width: 690px; margin-right: 10px"
+                    >
+                      <div class="hometab-content iten" data-title="tabTwo">
+                        <div class="slider-screen">
+                          <img
+                            src="//assets.www.happyfox.com/v2/images/stay_control.svg"
+                            width="533"
+                            height="226"
+                            alt="HappyFox feature - Stay in Control"
+                          />
+                        </div>
+                        <div class="slider-content">
+                          <h5>
+                            “We LOVE HappyFox. It has changed our work lives.
+                            Support requests no longer fall through the cracks
+                            and get lost in an email or some random
+                            spreadsheet.”
+                          </h5>
+                          <p>Bill Bates</p>
+                          <p>
+                            Director of Technology - Pinewood Private School
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="owl-nav">
+                </div>
+
+                <!-- <div class="owl-nav">
                     <button type="button" role="presentation" class="owl-prev">
                       <span aria-label="Previous"></span></button
                     ><button type="button" role="presentation" class="owl-next">
                       <span aria-label="Next"></span>
                     </button>
-                  </div>
-                </div>
+                  </div> -->
               </div>
+            </div>
 
-              <div class="features-buttons">
-                <a href="/customer-stories/">
-                  <button class="all-use-cases">
-                    View all customer stories
-                  </button></a
-                >
-                <a href="/help-desk-software-demo/"
-                  ><button class="demo-button">Get a Demo</button></a
-                >
-              </div>
+            <div class="features-buttons">
+              <a href="/customer-stories/">
+                <button class="all-use-cases">
+                  View all customer stories
+                </button></a
+              >
+              <a href="/help-desk-software-demo/"
+                ><button class="demo-button">Get a Demo</button></a
+              >
             </div>
           </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </div>
+
+    <div class="roi-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Align your goals.</h3>
+            <h4>Improve your ROI</h4>
+            <div class="roi-lists">
+              <div class="list-one">
+                <div class="list-icon">
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    loading="lazy"
+                    src="//assets.www.happyfox.com/v2/images/handle-icon.svg"
+                    alt="Icon"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="list-text">
+                  <h5>Handle all inbound requests in one ticketing system</h5>
+                  <p>
+                    Convert email, phone, chat and web requests into tickets and
+                    keep them organized.
+                  </p>
+                </div>
+              </div>
+              <div class="list-one">
+                <div class="list-icon">
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    loading="lazy"
+                    src="//assets.www.happyfox.com/v2/images/outsource-icon.svg"
+                    alt="Icon"
+                    width="32"
+                    height="30"
+                  />
+                </div>
+                <div class="list-text">
+                  <h5>Ease your day with a smart help desk software</h5>
+                  <p>
+                    Outsource complex and redundant workflows to a powerful
+                    smart rules engine.
+                  </p>
+                </div>
+              </div>
+              <div class="list-one">
+                <div class="list-icon">
+                  <img
+                    class="ls-is-cached lazyloaded"
+                    loading="lazy"
+                    src="//assets.www.happyfox.com/v2/images/analyse-icon.svg"
+                    alt="Icon"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="list-text">
+                  <h5>Analyse help desk metrics &amp; create solid actions</h5>
+                  <p>
+                    A ticketing system that can crunch your support process
+                    data.
+                  </p>
+                </div>
+              </div>
+              <div class="list-one">
+                <div class="list-icon">
+                  <img
+                    class="lazyload"
+                    loading="lazy"
+                    src="//assets.www.happyfox.com/v2/images/setting-icon.svg"
+                    alt="Icon"
+                    width="30"
+                    height="30"
+                  />
+                </div>
+                <div class="list-text">
+                  <h5>Tailor your support ticket system in all forms</h5>
+                  <p>
+                    Create your own custom fields, workflows &amp; personalize
+                    the support experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="roi-buttons">
+              <a href="/ticket-support-system/"
+                ><button class="all-features">View all features</button></a
+              >
+              <a href="/help-desk-software-demo/"
+                ><button class="demo-button">Get a Demo</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="helpdesk-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Help Desk Software for today's</h3>
+            <h4>fast-changing global businesses</h4>
+            <div class="hd-features">
+              <a
+                href="/customer-service-software/"
+                class="feature-list feature-one"
+              >
+                <div>
+                  <div class="list-icon">
+                    <img
+                      class="ls-is-cached lazyloaded"
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/images/support-icon.svg"
+                      alt="Icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="list-text">
+                    <h5>
+                      For customer support
+                      <img
+                        class="ls-is-cached lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/external-link-icon.svg"
+                        width="14"
+                        height="14"
+                        alt="Icon"
+                      />
+                    </h5>
+                    <p>
+                      A customer support tool that helps redefine your customer
+                      service and ensure customer loyalty.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="/solution/help-desk-software-for-it-services/"
+                class="feature-list feature-two"
+              >
+                <div>
+                  <div class="list-icon">
+                    <img
+                      class="ls-is-cached lazyloaded"
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/images/opration-icon.svg"
+                      alt="Icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="list-text">
+                    <h5>
+                      For IT operations<img
+                        class="ls-is-cached lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/external-link-icon.svg"
+                        width="14"
+                        height="14"
+                        alt="Icon"
+                      />
+                    </h5>
+                    <p>
+                      Customer support tool that helps IT and ITES companies
+                      deliver outstanding support.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="/solution/human-resource-help-desk-software/"
+                class="feature-list feature-three"
+              >
+                <div>
+                  <div class="list-icon">
+                    <img
+                      class="ls-is-cached lazyloaded"
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/images/discuss-icon.svg"
+                      alt="Icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="list-text">
+                    <h5>
+                      For HR &amp; Marketing<img
+                        class="ls-is-cached lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/external-link-icon.svg"
+                        width="14"
+                        height="14"
+                        alt="Icon"
+                      />
+                    </h5>
+                    <p>
+                      Track and manage issues from your customers and provide
+                      speedy resolutions.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="/ticket-support-system/" class="feature-list">
+                <div>
+                  <div class="list-icon">
+                    <img
+                      class="ls-is-cached lazyloaded"
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/images/team-icon.svg"
+                      alt="Icon"
+                      width="30"
+                      height="30"
+                    />
+                  </div>
+                  <div class="list-text">
+                    <h5>
+                      For all teams<img
+                        class="ls-is-cached lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/external-link-icon.svg"
+                        width="14"
+                        height="14"
+                        alt="Icon"
+                      />
+                    </h5>
+                    <p>
+                      All-in-one help desk ticketing system that provides faster
+                      and better support for your customers.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="features-buttons">
+              <a href="/help-desk-software-demo/"
+                ><button class="demo-button">Get a Demo</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="happyfox-apps">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>A happy roof that can accommodate</h3>
+            <h4>all your favorite business apps.</h4>
+            <div class="apps-list">
+              <div class="row-list">
+                <ul>
+                  <li>
+                    <a
+                      href="/help-desk-integration/help-desk-google-sso-authentication/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/google-icon.svg"
+                        alt="Icon"
+                        width="40"
+                        height="40"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="/help-desk-integration/salesforce-crm-help-desk-integration/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/salesforce-icon.svg"
+                        alt="Icon"
+                        width="57"
+                        height="40"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="/help-desk-integration/help-desk-issue-tracking/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/app3-icon.svg"
+                        alt="Icon"
+                        width="80"
+                        height="29"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="/help-desk-integration/ringcentral-voice/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/ring-icon.svg"
+                        alt="Icon"
+                        width="81"
+                        height="32"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="/help-desk-integration/social-help-desk-facebook/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/fb-icon.svg"
+                        alt="Icon"
+                        width="20"
+                        height="40"
+                    /></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a
+                      href="/help-desk-integration/twitter-social-customer-service-software/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/twitter-icon.svg"
+                        alt="Icon"
+                        width="43"
+                        height="35"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="/help-desk-integration/magento-ecommerce-help-desk-integration/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/magento-icon.svg"
+                        alt="Icon"
+                        width="35"
+                        height="40"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="/help-desk-integration/happyfox-helpdesk-microsoft-dynamics-integration/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/ms-dynamics-icon.svg"
+                        alt="Icon"
+                        width="25"
+                        height="40"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="/help-desk-integration/github-issue-tracking/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/github-icon.svg"
+                        alt="Icon"
+                        width="41"
+                        height="40"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="/help-desk-integration/shopify-ecommerce-help-desk/"
+                      ><img
+                        class="lazyloaded"
+                        loading="lazy"
+                        src="//assets.www.happyfox.com/v2/images/shopify-icon.svg"
+                        alt="Icon"
+                        width="36"
+                        height="40"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="features-buttons">
+              <a href="/help-desk-integration/"
+                ><button class="all-use-cases">View all integrations</button></a
+              >
+              <a href="/help-desk-software-demo/"
+                ><button class="demo-button">Get a Demo</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="happyfox-apps client-testimonials carousel>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Thousands of great companies call</h3>
+            <h4>HappyFox a great friend</h4>
+          </div>
+        </div>
+      </div>
+      <div
+        class="owl-carousel owl-theme owl-loaded owl-drag"
+        id="testimonialCarousel"
+      >
+        <div class="owl-stage-outer">
+          <div
+            class="owl-stage"
+            style="
+              transition: all 0.25s ease 0s;
+              width: 4153px;
+              transform: translate3d(-2076px, 0px, 0px);
+            "
+          >
+            <div
+              class="owl-item cloned"
+              style="width: 583.2px; margin-right: 10px"
+            >
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “With HappyFox we have a specialized partner, whose vast
+                  customer portfolio across multiple industries, sees and knows
+                  the next “big thing” in customer support, and integrates this
+                  into a compact and cost-effective solution, saving
+                  considerable effort, time and cost for us. In short, it allows
+                  us to focus on happy customers – the rest we leave to
+                  HappyFox.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Martin Hartvigsen</p>
+                    <p>Director, Global Technical Support</p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/jabra.svg"
+                      alt="Jabra"
+                      width="158"
+                      height="80"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 583.2px; margin-right: 10px"
+            >
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “With HappyFox, I finally feel that I can trust the data I’m
+                  able to export from the system. We implemented the solution
+                  for email tracking but are now leveraging it to track incoming
+                  invoices as well. If a business is facing similar problems to
+                  ours in terms of tracking incoming emails or a high number of
+                  incoming emails from the same customers or suppliers, in my
+                  opinion HappyFox really is the best solution to resolve this.
+                  With HappyFox, you really are able to track everything that is
+                  coming in, and analyze the data in real-time.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Pankaj Kumar</p>
+                    <p>
+                      Manager, Accounts Payable Whirlpool Global Finance Center
+                    </p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/whirlpool.svg"
+                      alt="Whirlpool"
+                      width="160"
+                      height="80"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 583.2px; margin-right: 10px">
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “So far we have Facilities and Security using this system.
+                  There is nothing I do not use in HappyFox and our team likes
+                  the app, the reports, the smart rules, and the tags. We enter
+                  tickets and complete them daily and HappyFox has improved our
+                  average number of tickets completed per month. My customers
+                  (Health Center Staff) have all responded very positively to
+                  the change; they love that they can see all the tickets for
+                  their site and comment on whether they’re still needed.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Karin Stopforth</p>
+                    <p>Facilities Administrator</p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/planned-parenthood.png"
+                      alt="Planned Parenthood"
+                      style="width: 250px; margin-top: 10px"
+                      width="250"
+                      height="31"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 583.2px; margin-right: 10px">
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “With HappyFox we have a specialized partner, whose vast
+                  customer portfolio across multiple industries, sees and knows
+                  the next “big thing” in customer support, and integrates this
+                  into a compact and cost-effective solution, saving
+                  considerable effort, time and cost for us. In short, it allows
+                  us to focus on happy customers – the rest we leave to
+                  HappyFox.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Martin Hartvigsen</p>
+                    <p>Director, Global Technical Support</p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/jabra.svg"
+                      alt="Jabra"
+                      width="158"
+                      height="80"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item active center"
+              style="width: 583.2px; margin-right: 10px"
+            >
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “With HappyFox, I finally feel that I can trust the data I’m
+                  able to export from the system. We implemented the solution
+                  for email tracking but are now leveraging it to track incoming
+                  invoices as well. If a business is facing similar problems to
+                  ours in terms of tracking incoming emails or a high number of
+                  incoming emails from the same customers or suppliers, in my
+                  opinion HappyFox really is the best solution to resolve this.
+                  With HappyFox, you really are able to track everything that is
+                  coming in, and analyze the data in real-time.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Pankaj Kumar</p>
+                    <p>
+                      Manager, Accounts Payable Whirlpool Global Finance Center
+                    </p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/whirlpool.svg"
+                      alt="Whirlpool"
+                      width="160"
+                      height="80"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned active"
+              style="width: 583.2px; margin-right: 10px"
+            >
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “So far we have Facilities and Security using this system.
+                  There is nothing I do not use in HappyFox and our team likes
+                  the app, the reports, the smart rules, and the tags. We enter
+                  tickets and complete them daily and HappyFox has improved our
+                  average number of tickets completed per month. My customers
+                  (Health Center Staff) have all responded very positively to
+                  the change; they love that they can see all the tickets for
+                  their site and comment on whether they’re still needed.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Karin Stopforth</p>
+                    <p>Facilities Administrator</p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/planned-parenthood.png"
+                      alt="Planned Parenthood"
+                      style="width: 250px; margin-top: 10px"
+                      width="250"
+                      height="31"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="owl-item cloned"
+              style="width: 583.2px; margin-right: 10px"
+            >
+              <div class="client-feedback">
+                <p class="feedback-text">
+                  “With HappyFox we have a specialized partner, whose vast
+                  customer portfolio across multiple industries, sees and knows
+                  the next “big thing” in customer support, and integrates this
+                  into a compact and cost-effective solution, saving
+                  considerable effort, time and cost for us. In short, it allows
+                  us to focus on happy customers – the rest we leave to
+                  HappyFox.”
+                </p>
+                <div class="client-details">
+                  <div class="client-name">
+                    <p>Martin Hartvigsen</p>
+                    <p>Director, Global Technical Support</p>
+                  </div>
+                  <div class="client-logo">
+                    <img
+                      loading="lazy"
+                      src="//assets.www.happyfox.com/v2/logo/jabra.svg"
+                      alt="Jabra"
+                      width="158"
+                      height="80"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="owl-nav">
+          <button
+            type="button"
+            role="presentation"
+            class="owl-prev"
+            aria-label="Previous item"
+          >
+            <span></span>
+          </button>
+          <button
+            type="button"
+            role="presentation"
+            class="owl-next"
+            aria-label="Next item"
+          >
+            <span></span>
+          </button>
+        </div> -->
+        <!-- <div class="owl-dots">
+          <button role="button" class="owl-dot"><span></span></button>
+          <button role="button" class="owl-dot"><span></span></button>
+          <button role="button" class="owl-dot active"><span></span></button>
+        </div> -->
+      </div>
+    </div>
+
+    
   </body>
 </html>
-<script type="module" src="./index.js"></script>
+<script>
+  $(document).ready(function(){
+    var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:false,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+  })
+ 
+</script>
+
+<script src="./index.js"></script>
