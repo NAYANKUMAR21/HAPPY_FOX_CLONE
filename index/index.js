@@ -9,7 +9,7 @@ let signupBtn = document.getElementById("prefooterButton");
     if (email === "") {
       return false;
     }
-    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    if (!email.match(/^([\w-+.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)((\w+-?)+\w+\.)+[a-z]{2,})?$/)) {
       error.innerHTML = "Please enter a valid email";
       return false;
     }
@@ -17,22 +17,3 @@ let signupBtn = document.getElementById("prefooterButton");
     return alert("signup Sucessfull");
   };
 
-  // let videoPlay=document.getElementById('playVideo');
-  // videoPlay.onclick=(event)=>{
-  //   playVideo();
-  // }
-
-//  let playVideo=()=>{
-//   // videoPlay.innerHTML="";
-
-//   //   let iframe=document.getElementById('iframe')
-//   //   videoPlay.innerHTML=iframe;
-
-    
-//     // player.innerHTML= 
-// console.log("play")
-//   }
-
-
-
-document.querySelector("#carousel-custom-dots")
