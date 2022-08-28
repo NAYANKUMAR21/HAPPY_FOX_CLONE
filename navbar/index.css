@@ -12,6 +12,11 @@
     /* padding-top: 20px; */
     
 }
+#bottom_navbar,#feat{
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+}
 #service>div:nth-child(1){
     width:20%;
 }
@@ -23,7 +28,7 @@
     width:50%;
 }
 #navbar{
-    width: 50%;
+    width: 100%;
     margin: auto;
 
     border: 1px solid black;

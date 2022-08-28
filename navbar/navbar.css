@@ -1,5 +1,15 @@
-
-
+#upper_dropdown{
+    gap: 20px;
+    padding: 10px 20px;
+}
+#lower_dropdown{
+    gap: 20px;
+    padding: 10px 20px;
+    /* background-color: white; */
+}
+#parentBottom{
+    background-color: white;
+}
 #parentTop{
     background-color: #f4f6f6;
     padding: 5px;
@@ -47,7 +57,7 @@ li{
     width:100%;
     /* border: 1px solid black; */
     padding: 3px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     background-color: white;
 }
 /* #navbarbottom>div{
@@ -62,10 +72,12 @@ li{
     width: 70%;      
     font-size: 14px;  
 }
+#demo_nav{
+    color: white;
+}
 a{
     text-decoration: none;
     color: white;
-
 }
 #demo_nav_child{
     width:80%;
