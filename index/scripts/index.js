@@ -15,7 +15,7 @@ let signupBtn = document.getElementById("prefooterButton");
     }
     error.innerText = "";
    alert("signup Sucessfull");
-   window.location.href="./Demo/demo.html"
+   window.location.href="Demo/demo.html"
   };
 
  

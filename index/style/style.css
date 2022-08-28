@@ -173,7 +173,10 @@
   cursor: pointer;
 }
 
-
+.abc>img{
+  margin-top: 50px;
+  margin-left: 50px;
+}
 
 /* .hf-home__video iframe {
   position: absolute;
