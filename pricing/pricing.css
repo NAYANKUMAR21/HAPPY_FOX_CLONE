@@ -486,7 +486,11 @@ svg {
     overflow: hidden;
     background-color: #f1f1f1;
   }
-
+#navbar{
+    display: block;
+    /* background-color: white;
+    opacity: 1; */
+}
   
   @media all and (min-width:320px) and (max-width:576px){
     .pricing-calc__tab{
