@@ -90,10 +90,6 @@ button{
 display:flex;
 justify-content: flex-end;
 }
-#body{
-    /* border: 1px solid black; */
-    height: 10000px;
-}
 .sticky{
     position: fixed;
     top: 0;
