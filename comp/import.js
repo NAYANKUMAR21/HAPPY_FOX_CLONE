@@ -64,7 +64,7 @@ function navbar(){
         </div>
         <div id="demo">
             
-                <button><a href="../Demo/demo.html">Get a Demo</a></button>
+                <button id="demo_nav">Get a Demo</button>
             
         </div>
         </div>

@@ -19,11 +19,16 @@ window.addEventListener("scroll",function(){
 
 })
 
-let Price = document.querySelector('#priceing');
-Price.addEventListener("click",function(){
-    location.href = "../pricing/pricing.html"
-})
-let login = document.querySelector('#login');
-login.addEventListener("click",function(){
-    location.href = "../login/index.html"
-})
+// let Price = document.querySelector('#priceing');
+// Price.addEventListener("click",function(){
+//     console.log("hello")
+//     window.location.href = "./pricing/pricing.html"
+// })
+// let login = document.querySelector('#login');
+// login.addEventListener("click",function(){
+//     window.location.href = "./login/index.html"
+// })
+
+// document.getElementById('demo_nav').addEventListener("click",function(){
+//     window.location.href=''
+// })

@@ -68,10 +68,12 @@ li{
     width: 70%;      
     font-size: 14px;  
 }
+#demo_nav{
+    color: white;
+}
 a{
     text-decoration: none;
     color: white;
-
 }
 button{
     width:80%;
