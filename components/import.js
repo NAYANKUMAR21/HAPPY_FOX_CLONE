@@ -64,7 +64,7 @@ function navbar(){
         </div>
         <div id="demo">
             
-                <button id="demo_nav">Get a Demo</button>
+                <button><a href="../Demo/demo.html">Get a Demo</a></button>
             
         </div>
         </div>
@@ -523,7 +523,7 @@ return `<footer>
 </footer>
 `
 }
- function chat(){
+function chat(){
     return `<div id="outer_box">
     <p>HappyFox<span id="startOver">...</span></p>
     <div id="inner_box">

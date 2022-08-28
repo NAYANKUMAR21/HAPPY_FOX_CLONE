@@ -1,6 +1,10 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+#parentS{
+    background-color: white;
+    opacity: 1;
+}
 #service{
     /* border:1px solid black; */
     display:flex;
@@ -26,6 +30,8 @@
 #navbar{
     width: 100%;
     margin: auto;
+
+    border: 1px solid black;
 }
 #navbar>ul{
     display: flex;
