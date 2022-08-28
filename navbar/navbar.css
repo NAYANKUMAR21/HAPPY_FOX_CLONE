@@ -1,99 +1,5 @@
-label #btn,label #cancel{
-    
-    position: relative;
-    left: 11%;
-    top:34px;
-    font-size: 15px;
-    margin-right: 10px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-@media all and (min-width:50px) and (max-width:1200px){
-    label #btn{
-        display: inline;
-    }
-    #demo>button{
-        width:60%;
-    }
-    #demo>button>a{
-        font-size: 11px;
-    }
-    #upper_dropdown>div>ul>li{
-        font-size: 11px;
-        display: block;
-    }
-    #upper_dropdown>div{
-        font-size: 11px;
-        
 
-    }
-    #upper_dropdown{
-        display: block;
-    }
-    #navbarTop>div:nth-child(2){
-        position: fixed;
-        display: flex;
-        width:20%;
-        /* border: 1px solid black; */
-        background-color: white;
-        flex-direction: column;
-        margin-left: 100px;
-        top:150px;
-        left:-100%;
-        
-        
-    }
-    
 
-    #navbarbottom>div:nth-child(2){
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        margin: 100px;
-        background-color: white;
-        margin-left: 100px;
-        width: 20%;     
-        /* border: 1px solid black; */
-        top:50px;
-        left:-100%;
-    }
-    #navbarbottom>div:nth-child(2)>div{
-        border-bottom: 1px solid rgb(180, 211, 211);
-        margin-bottom: 20px;
-    }
-    #lower_dropdown>div>ul>li{
-        font-size: 20px;
-    }
-    #lower_dropdown>div{
-        font-size: 11px;
-       
-    }
-    #check:checked ~ #navbarbottom>div:nth-child(2){
-        left: 0px;
-    }
-    #check:checked ~ label #btn{
-        display: none;
-    }
-    #check:checked ~ label #cancel{
-        display: block;
-    }
-    
-}
-@media all and (min-width:100px) and (max-width:1199px){
-    label #btn{
-        display: block;
-        font-size: 13px;
-    }
-    #demo>button{
-        width:60%;
-    }
-    #demo>button>a{
-        font-size: 7px;
-    }
-}
 #parentTop{
     background-color: #f4f6f6;
     padding: 5px;
@@ -173,7 +79,7 @@ button{
     
 }
 #navbarbottom>div:nth-child(1){
- width:12.8%;
+ width:13%;
  padding-top:10px; 
 }
 #navbarbottom>div:nth-child(1)>img{
@@ -200,4 +106,252 @@ justify-content: flex-end;
 }
 #bottom_navbar{
     position: absolute;
+}
+
+
+label #btn,label #cancel{
+    
+    position: relative;
+    left: 11%;
+    top:34px;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media all and (min-width:320px) and (max-width:480px){
+
+    label #btn{
+        display: block;
+    }
+    #demo>button{
+        width:auto;
+    }
+    #demo>button>a{
+        font-size: 11px;
+    }
+    #upper_dropdown>div>ul>li{
+        font-size: 11px;
+        display: block;
+    }
+    #upper_dropdown>div{
+        font-size: 11px;
+        
+
+    }
+    #upper_dropdown{
+        display: block;
+    }
+    #navbarbottom>div:nth-child(1){
+        width:30%;
+    }
+    #navbarTop>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        width:20%;
+        /* border: 1px solid black; */
+        background-color: white;
+        flex-direction: column;
+        margin-left: 100px;
+        top:150px;
+        left:-100%;
+        
+        
+    }
+    
+
+    #navbarbottom>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        background-color: white;
+        margin-left: 100px;
+        width: 60%;     
+        /* border: 1px solid black; */
+        top:50px;
+        left:-100%;
+    }
+    #navbarbottom>div:nth-child(2)>div{
+        border-bottom: 1px solid rgb(180, 211, 211);
+        margin-bottom: 20px;
+    }
+    #lower_dropdown>div>ul>li{
+        font-size: 20px;
+    }
+    #lower_dropdown>div{
+        font-size: 11px;
+       
+    }
+    #check:checked ~ #navbarbottom>div:nth-child(2){
+        left: 0px;
+        
+    }
+    #check:checked ~ label#btn{
+        display: block;
+    }
+    /* #check:checked ~ label#cancel{
+        display: block;
+    } */
+    
+}
+
+
+
+@media all and (min-width:481px) and (max-width:768px){
+    
+    label #btn{
+        display: block;
+    }
+    #demo>button{
+        width:auto;
+    }
+    #demo>button>a{
+        font-size: 11px;
+    }
+    #upper_dropdown>div>ul>li{
+        font-size: 11px;
+        display: block;
+    }
+    #upper_dropdown>div{
+        font-size: 11px;
+        
+
+    }
+    #upper_dropdown{
+        display: block;
+    }
+    #navbarbottom>div:nth-child(1){
+        width:25%;
+    }
+    #navbarTop>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        width:20%;
+        /* border: 1px solid black; */
+        background-color: white;
+        flex-direction: column;
+        margin-left: 100px;
+        top:150px;
+        left:-100%;
+        
+        
+    }
+    
+
+    #navbarbottom>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        background-color: white;
+        margin-left: 100px;
+        width: 70%;     
+        /* border: 1px solid black; */
+        top:50px;
+        left:-100%;
+    }
+    #navbarbottom>div:nth-child(2)>div{
+        border-bottom: 1px solid rgb(180, 211, 211);
+        margin-bottom: 20px;
+    }
+    #lower_dropdown>div>ul>li{
+        font-size: 20px;
+    }
+    #lower_dropdown>div{
+        font-size: 11px;
+       
+    }
+    #check:checked ~ #navbarbottom>div:nth-child(2){
+        left: 0px;
+        
+    }
+    #check:checked ~ label#btn{
+        display: block;
+    }
+    /* #check:checked ~ label#cancel{
+        display: block;
+    } */
+ 
+}
+
+@media all and (min-width:769px) and (max-width:1200px){
+label #btn{
+        display: block;
+    }
+    #demo>button{
+        width:auto;
+    }
+    #demo>button>a{
+        font-size: 11px;
+    }
+    #upper_dropdown>div>ul>li{
+        font-size: 11px;
+        display: block;
+    }
+    #upper_dropdown>div{
+        font-size: 11px;
+        
+
+    }
+    #upper_dropdown{
+        display: block;
+    }
+    #navbarbottom>div:nth-child(1){
+        width:20%;
+    }
+    #navbarTop>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        width:20%;
+        /* border: 1px solid black; */
+        background-color: white;
+        flex-direction: column;
+        margin-left: 100px;
+        top:150px;
+        left:-100%;
+        
+        
+    }
+    
+
+    #navbarbottom>div:nth-child(2){
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin: 100px;
+        background-color: white;
+        margin-left: 100px;
+        /* width: 20%;      */
+        /* border: 1px solid black; */
+        top:50px;
+        left:-100%;
+    }
+    #navbarbottom>div:nth-child(2)>div{
+        border-bottom: 1px solid rgb(180, 211, 211);
+        margin-bottom: 20px;
+    }
+    #lower_dropdown>div>ul>li{
+        font-size: 20px;
+    }
+    #lower_dropdown>div{
+        font-size: 11px;
+       
+    }
+    #check:checked ~ #navbarbottom>div:nth-child(2){
+        left: 0px;
+        
+    }
+    #check:checked ~ label#btn{
+        display: none;
+    }
+    #check:checked ~ label#cancel{
+        display: inline;
+    }
+ 
 }
