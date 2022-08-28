@@ -14,10 +14,7 @@
     justify-content: space-between;
     flex-direction: column;
   }
-  /* ._65-col-box {
-    width: 80vw;
-   
-  } */
+ 
   .hf-body__heading-large {
     font-size:48px;
     line-height: 1.167;

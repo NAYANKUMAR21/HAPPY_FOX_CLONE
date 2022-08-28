@@ -16,7 +16,7 @@
 <script src="./jquery/owl.carousel.min.js"></script>
   </head>
   <body>
-    <div id="Navbar"><a href="">Navbar</a></div>
+    <div id="Navbar"></div>
     <div class="hf-home__banner version_2">
       <div class="container">
         <div class="hf-home__banner-wrap">
@@ -1097,7 +1097,12 @@
   </body>
 </html>
 <script type="module" >
-import footer from "./components/footer.js"
+import footer from "./components/footer.js";
+
+// import { drop ,support,operations,features,solutions,resourse} from "../navbar/components/dropdown.js"
+// let navBar=document.getElementById('Navbar')
+// navBar.innerHTML= drop() ,support(),operations(),features(),solutions(),resourse()
+
   let fooTer=document.getElementById('footer')
   fooTer.innerHTML=footer();
 </script>

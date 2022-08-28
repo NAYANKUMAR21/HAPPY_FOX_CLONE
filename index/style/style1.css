@@ -67,7 +67,7 @@ p {
     text-align: center;
     font-size: 32px;
     font-weight: 300;
-    /* color: #fff; */
+    color: #fff;
     margin-top: 130px;
 }
 
@@ -256,7 +256,7 @@ a:-webkit-any-link {
 .roi-section {
     width: 100%;
     margin-bottom: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     background: url(https://assets.www.happyfox.com/v2/images/goal-background.svg) no-repeat;
     background-size: cover;
 }
@@ -285,11 +285,8 @@ a:-webkit-any-link {
     transition: all .3s ease;
     margin: 0 40px 40px 0;
 }
-.list-one:hover{
-    color: #fff;
-/* transform: translate3d(2px -2px 2px);
-transition: all .3s ease; */
-}
+
+
 .feature-list .list-icon, .roi-lists .list-icon {
     float: left;
     margin: 0 20px 0 0;
@@ -305,7 +302,7 @@ transition: all .3s ease; */
     font-weight: 500;
     margin: 10px 0 60px;
 }
-     .customer-support h3, .customer-support h4, .happyfox-apps h3, .happyfox-apps h4, .helpdesk-features h3, .helpdesk-features h4, .pricing-table-features h3, .pricing-table-features h4 {
+.customer-support h3, .customer-support h4, .happyfox-apps h3, .happyfox-apps h4, .helpdesk-features h3, .helpdesk-features h4, .pricing-table-features h3, .pricing-table-features h4 {
         color: #323643;
     }
    
@@ -319,16 +316,6 @@ transition: all .3s ease; */
         font-weight: bold;
     }
    
-    .helpdesk-features h4{
-     color: #323643;
-     font-weight: 500;
-    margin: 10px 0 60px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 300;
-    /* color: #fff; */
-    margin-top: 130px;
-    }
 
     .feature-list.feature-one {
         border-top: 7px solid #e2434b;
@@ -370,19 +357,42 @@ transition: all .3s ease; */
 .happyfox-apps, .helpdesk-features {
     background: linear-gradient(#fff,#f3f6f8,#fff);
 }
-/* .happyfox-apps {
-    margin: px 0;
-} */
+.happyfox-apps {
+    margin: 0px;
+}
 
     
-.happyfox-apps h3{
+/* .happyfox-apps h3{
     margin-top: 0;
     text-align: center;
     font-size: 32px;
     font-weight: 300;
     color: #323643;
     margin-top: 130px;
+} */
+.happyfox-apps ul li a {
+    width: 100%;
+    height: 100%;
+    float: left;
 }
+.happyfox-apps ul li {
+    float: left;
+    width: 160px;
+    height: 160px;
+    border-radius: 90px;
+    background: #fff;
+    margin-right: 50px;
+    box-shadow: 0 10px 60px 0 #e6e6e6;
+    transition: all .5s ease;
+}
+ /* li {
+    display: list-item;
+    text-align: match-parent;
+} */
+
+
+
+
 
 .row-list {
     margin: auto;
@@ -395,11 +405,7 @@ transition: all .3s ease; */
 .apps-list .row-list:last-child li {
     margin-bottom: 0;
 }
-.happyfox-apps ul li a {
-    width: 100%;
-    height: 100%;
-    float: left;
-}
+
 
 
 
@@ -411,20 +417,7 @@ transition: all .3s ease; */
 .row-list ul+ul {
     margin-top: 30px;
 }
-.happyfox-apps ul li {
-    float: left;
-    width: 160px;
-    height: 160px;
-    border-radius: 90px;
-    background: #fff;
-    margin-right: 50px;
-    box-shadow: 0 10px 60px 0 #e6e6e6;
-    transition: all .5s ease;
-}
-li {
-    display: list-item;
-    text-align: match-parent;
-}
+
 
  .owl-carousel.owl-loaded {
     display: block;
@@ -513,8 +506,10 @@ li {
     .container {
         max-width: 540px;
     }
+    
     .roi-section {
         margin-top: -110px;
+        padding-bottom: 120px;
     }
     .customer-support h3, .happyfox-apps h3, .helpdesk-features h3, .roi-section h3 {
         font-size: 32px;
@@ -613,12 +608,20 @@ li {
     width: 450px;
     margin: 0 30px 30px 0;
 }
+/* .roi-section {
+    margin-top: -50px;
+    padding-bottom: 120px;
+
+}*/
+.roi-section h4 {
+    margin-top: 10px;
+} 
 .roi-buttons{
     margin-left:225px;
     margin-top: 50px;
   }
-  .happyfox-apps ul li img {
-    margin-top: 42px;
+.happyfox-apps ul li img {
+    margin-top: 300px;
 }
 .footer-bottom-links {
     display: flex;
@@ -639,27 +642,9 @@ li {
 .new-container {
     max-width: 960px;
 }
+
   
 }
-
-
-    
-    
-  
-    
-    /* @media (max-width: 1200px){
-
-
-    } */
-    
-   
- 
-    
-    
-   
-    
-
-
 
 
 
