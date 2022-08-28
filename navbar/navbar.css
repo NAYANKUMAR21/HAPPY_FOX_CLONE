@@ -1,33 +1,15 @@
-<<<<<<< HEAD
-#upper_dropdown{
-    gap: 20px;
-    padding: 10px 20px;
+#upper_dropdown {
+  gap: 20px;
+  padding: 10px 20px;
 }
-#lower_dropdown{
-    gap: 20px;
-    padding: 10px 20px;
-    /* background-color: white; */
+#lower_dropdown {
+  gap: 20px;
+  padding: 10px 20px;
+  /* background-color: white; */
 }
-#parentBottom{
-    background-color: white;
+#parentBottom {
+  background-color: white;
 }
-#parentTop{
-    background-color: #f4f6f6;
-    padding: 5px;
-}
-#navbarTop{
-    display: flex;
-    width:70%;
-    margin:auto;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-    color: teal;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* body{
-    height: 1500px;
-    background-color: rgb(128, 128, 209);
-=======
 #parentTop {
   background-color: #f4f6f6;
   padding: 5px;
@@ -41,6 +23,40 @@
   color: teal;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* body{
+    height: 1500px;
+    background-color: rgb(128, 128, 209);
+#parentTop {
+  background-color: #f4f6f6;
+  padding: 5px;
+}
+#navbarTop {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid black; */
+/* justify-content: space-between;
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+/* body {
+  height: 1500px;
+  background-color: rgb(128, 128, 209);
+>>>>>>> 298bec7 (updated)
+=======
+#parentTop {
+  background-color: #f4f6f6;
+  padding: 5px;
+}
+#navbarTop {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid black; */
+/* justify-content: space-between;
+  color: teal;
+  font-family: Arial, Helvetica, sans-serif;
+} */
 /* body {
   height: 1500px;
   background-color: rgb(128, 128, 209);
@@ -69,21 +85,19 @@ li {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
-<<<<<<< HEAD
-#parentBottom{
-    width:100%;
-    /* border: 1px solid black; */
-    padding: 3px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    background-color: white;
-=======
+
 #parentBottom {
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 3px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  background-color: white;
+
   width: 100%;
   /* border: 1px solid black; */
   padding: 3px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
->>>>>>> 298bec7 (updated)
 }
 /* #navbarbottom>div{
     border: 1px solid blue;
@@ -135,45 +149,54 @@ button {
 #bottom_navbar {
   position: absolute;
 }
-<<<<<<< HEAD
+
 /* #demo_nav{
     background-color: #ff6200;
     
 } */
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-#demo_nav{
-    width:80%;
-    height:100%;
-    background-color: #ff6200;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    
+#demo_nav {
+  width: 80%;
+  height: 100%;
+  background-color: #ff6200;
+  border: none;
+  border-radius: 8px;
+  color: white;
 }
-#navbarbottom>div:nth-child(3){
-    width:15%;
-   padding-top: 2px;
-   padding-bottom: 2px;
-    
+#navbarbottom > div:nth-child(3) {
+  width: 15%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
-#navbarbottom>div:nth-child(1){
- width:13%;
- padding-top:10px; 
+#navbarbottom > div:nth-child(1) {
+  width: 13%;
+  padding-top: 10px;
 }
-#navbarbottom>div:nth-child(1)>img{
-    width:100%;
-    
+#navbarbottom > div:nth-child(1) > img {
+  width: 100%;
 }
-#navbarbottom>div:nth-child(3){
-display:flex;
-justify-content: flex-end;
+#navbarbottom > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.sticky{
-=======
+.sticky {
+  /* label #btn,
+label #cancel { */
+  position: relative;
+  left: 11%;
+  top: 34px;
+  font-size: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
 
 label #btn,
 label #cancel {
@@ -213,7 +236,6 @@ label #cancel {
     width: 30%;
   }
   #navbarTop > div:nth-child(2) {
->>>>>>> 298bec7 (updated)
     position: fixed;
     display: flex;
     width: 20%;
