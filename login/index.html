@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>Log in to HappyFox Help Desk</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="../navbar/index.css" />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="container">
       <div id="left">
         <h1>Log into<br />HappyFox Help Desk</h1>
@@ -58,3 +61,118 @@
 </html>
 
 <script src="scripts/index.js"></script>
+<script src="../navbar/components/dropdown.js"></script>
+<script type="module">
+  import { footer, navbar, chat } from "../comp/import.js";
+  import {
+    drop,
+    support,
+    operations,
+    features,
+    solutions,
+    resourse,
+  } from "../navbar/components/dropdown.js";
+  // document.querySelector("body").append(navbar);
+  document.querySelector("#navbar").innerHTML = navbar();
+  let n = 0;
+  let o = 0;
+  let p = 0;
+  let q = 0;
+  let r = 0;
+  let s = 0;
+  let feat = document.querySelector("#customerService");
+  feat.addEventListener("click", main1);
+
+  function main1() {
+    n++;
+    document.getElementById("feat").innerHTML = "";
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (n % 2 !== 0) {
+      let x = drop();
+      document.getElementById("feat").innerHTML = drop();
+      document.getElementById("feat").style.backgroundColor = "white";
+      // console.log(x)
+    } else if (n % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("feat").innerHTML = "";
+      //console.log(n)
+    }
+  }
+
+  let Support = document.querySelector("#itSupport");
+  Support.addEventListener("click", main2);
+  function main2() {
+    o++;
+    document.getElementById("feat").innerHTML = "";
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (o % 2 !== 0) {
+      document.getElementById("feat").innerHTML = support();
+      document.getElementById("feat").style.backgroundColor = "white";
+    } else if (o % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("feat").innerHTML = "";
+      //console.log(n)
+    }
+  }
+
+  let Operate = document.querySelector("#operations");
+  Operate.addEventListener("click", main3);
+
+  function main3() {
+    p++;
+    document.getElementById("feat").innerHTML = "";
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (p % 2 !== 0) {
+      document.getElementById("feat").innerHTML = operations();
+      document.getElementById("feat").style.backgroundColor = "white";
+    } else if (p % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("feat").innerHTML = "";
+      //console.log(n)
+    }
+  }
+
+  let speci1 = document.querySelector("#features");
+  speci1.addEventListener("click", main4);
+  function main4() {
+    q++;
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (q % 2 !== 0) {
+      document.getElementById("bottom_navbar").innerHTML = features();
+      document.getElementById("bottom_navbar").style.backgroundColor = "white";
+    } else if (q % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("bottom_navbar").innerHTML = "";
+      //console.log(n)
+    }
+  }
+  let speci2 = document.querySelector("#Solutions");
+  speci2.addEventListener("click", main5);
+  function main5() {
+    r++;
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (r % 2 !== 0) {
+      document.getElementById("bottom_navbar").innerHTML = solutions();
+      document.getElementById("bottom_navbar").style.backgroundColor = "white";
+    } else if (r % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("bottom_navbar").innerHTML = "";
+      //console.log(n)
+    }
+  }
+  let speci3 = document.querySelector("#resourse");
+  speci3.addEventListener("click", main6);
+
+  function main6() {
+    s++;
+    document.getElementById("bottom_navbar").innerHTML = "";
+    if (s % 2 !== 0) {
+      document.getElementById("bottom_navbar").innerHTML = resourse();
+      document.getElementById("bottom_navbar").style.backgroundColor = "white";
+    } else if (s % 2 == 0) {
+      // document.body.innerHTML = ""
+      document.getElementById("bottom_navbar").innerHTML = "";
+      //console.log(n)
+    }
+  }
+</script>
