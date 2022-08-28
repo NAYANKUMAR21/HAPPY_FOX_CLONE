@@ -176,6 +176,10 @@ label #btn,label #cancel{
         /* border: 1px solid black; */
         top:50px;
         left:-100%;
+        transition: ease-in 0.5s;
+    }
+    #check{
+        display: inline;
     }
     #navbarbottom>div:nth-child(2)>div{
         border-bottom: 1px solid rgb(180, 211, 211);
@@ -192,12 +196,12 @@ label #btn,label #cancel{
         left: 0px;
         
     }
-    #check:checked ~ label#btn{
+    #check:checked ~ label #btn{
         display: block;
     }
-    /* #check:checked ~ label#cancel{
+    #check:checked ~ label #cancel{
         display: block;
-    } */
+    }
     
 }
 
