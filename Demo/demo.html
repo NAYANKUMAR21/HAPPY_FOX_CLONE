@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="./style/demo.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <body>
+    <nav id="navbar"></nav>
     <div id="demo_dtails">
         <div  id="main_content">
             <div class="demo_content">
@@ -176,5 +178,10 @@
     </div>
 </body>
 </html>
-<script src="demo.js"></script>
+<script src="./script/demo.js"></script>
 <script src="https://kit.fontawesome.com/730676c17d.js" crossorigin="anonymous"></script>
+<script type="module">
+       import navbar from "../compnents/navbar/navbar.js";
+       let nav = document.getElementById("navbar");
+       nav.innerHTML=navbar;
+</script>
