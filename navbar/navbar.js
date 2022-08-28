@@ -5,7 +5,9 @@ window.addEventListener("scroll",function(){
     if(window.pageYOffset>=62){
         navbar.classList.add("sticky")
     }
-    else{
+    else if(window.pageYOffset>=1000){
+        navbar.classList.remove("sticky");
+    }else{
         navbar.classList.remove("sticky");
     }
 })
