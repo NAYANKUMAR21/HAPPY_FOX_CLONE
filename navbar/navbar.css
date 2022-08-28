@@ -258,7 +258,7 @@ label #btn,label #cancel{
         width: 70%;     
         /* border: 1px solid black; */
         top:50px;
-        left:-100%;
+        left:-200%;
     }
     #navbarbottom>div:nth-child(2)>div{
         border-bottom: 1px solid rgb(180, 211, 211);
