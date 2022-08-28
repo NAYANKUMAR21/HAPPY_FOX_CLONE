@@ -3,14 +3,15 @@
     padding: 0;
 }
 #chatbot_icon{
-    position: absolute;
+    position: fixed;
     top: 89%;
     left: 90%;
+    
     width: 70px;
     height: 70px;
     z-index: 1;
     border-radius: 50%;
-    background-color: #06181f;
+    background-color: rgb(33, 4, 101);
 }
 #message_icon{
     
@@ -91,7 +92,7 @@
     background-color: #4c29e7;
     border-radius: 25px 25px 25px 25px;
     border: 1px solid black;
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 65%;
     color: white;
@@ -105,7 +106,7 @@
     margin-top: 5px;
     
 }
-span{
+#startOver{
   position: relative;
   font-size: 20px;
   left: 30%;
