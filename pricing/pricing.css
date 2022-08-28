@@ -1,7 +1,7 @@
 .pricing-banner {
     background: url(https://assets.www.happyfox.com/v2/images/pricing-new-banner-bg-new.png) no-repeat left top;
     text-align: center;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 *, ::after, ::before {
@@ -22,15 +22,15 @@ body {
     margin-left: auto;
 }
 .row {
-    display: -ms-flexbox;
+    /* display: -ms-flexbox; */
     display: flex;
-    -ms-flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 .col-md-12{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
@@ -40,7 +40,7 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    max-width: 77%;
+    width: 77%;
     align-items: stretch;
     min-height: 90px;
 }
@@ -164,6 +164,7 @@ button {
 
 .pricing-comparer {
     padding-bottom: 50px;
+    width: 100%;
 }
 .pricing-banner-para {
     margin: 80px auto 40px;
@@ -340,14 +341,14 @@ svg {
     margin-right: auto;
     margin-left: auto;
 }
-.row{
+/* .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 .col-md-12{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 1px;
 }
@@ -486,6 +487,51 @@ svg {
     background-color: #f1f1f1;
   }
 
-
-
+  
+  @media all and (min-width:320px) and (max-width:576px){
+    .pricing-calc__tab{
+        display: grid;
+    }
+    .pricing-calc__tabs{
+        width: auto;
+        margin: auto;
+    }
+    .pricing-plans{
+        display: grid;
+    }
+    .pricing-plans div{
+        margin: auto;
+    }
+    .row{
+        margin: auto;
+    }
+    .table-column{
+        width: 48%;
+    }
+    .more-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media all and (min-width:481px) and (max-width:768px){
     
+    .pricing-calc__tab{
+        display: grid;
+    }
+    .pricing-calc__tabs{
+        width: auto;
+    }
+    .pricing-plans{
+        display: grid;
+    }
+    .pricing-plans div{
+        margin: auto;
+    }
+    .table-column{
+        width: 48%;
+    }
+    .more-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
