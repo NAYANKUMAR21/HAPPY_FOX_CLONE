@@ -295,6 +295,7 @@ svg {
     font-weight: 500;
     cursor: pointer;
     background: #f9f9f9;
+    color: #000;
     border-radius: 10px;
     text-align: left;
     display: flex;

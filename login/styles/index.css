@@ -2,6 +2,7 @@
   margin-top: 110px;
   display: grid;
   width: 100%;
+  gap: 30px;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(1, 696.65px);
   font-family: hero-new, sans-serif;

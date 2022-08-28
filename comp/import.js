@@ -1,7 +1,7 @@
 function navbar(){
     return ` <div id="parentTop"> 
     <div id="navbarTop">
-    <div>
+    <div id="home">
         <img src="https://assets.www.happyfox.com/v2/images/site-nav/topbar-logo-black.svg" alt="navbar_symbol">
     </div>
     <div id="upper_dropdown">
