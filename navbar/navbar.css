@@ -13,6 +13,10 @@
     color: teal;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    height: 1500px;
+    background-color: rgb(128, 128, 209);
+}
 /* #navbarTop>div{
     border: 1px solid blue;
 } */
