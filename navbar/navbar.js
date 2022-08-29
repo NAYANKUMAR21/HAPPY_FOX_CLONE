@@ -14,6 +14,7 @@ window.addEventListener("scroll",function(){
 
 let Price = document.querySelector('#priceing');
 Price.addEventListener("click",function(){
+    console.log("hello world")
     location.href = "../pricing/pricing.html"
 })
 let login = document.querySelector('#login');
