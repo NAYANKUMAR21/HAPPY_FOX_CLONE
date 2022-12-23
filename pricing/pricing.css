@@ -1,23 +1,13 @@
 .pricing-banner {
     background: url(https://assets.www.happyfox.com/v2/images/pricing-new-banner-bg-new.png) no-repeat left top;
     text-align: center;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 *, ::after, ::before {
     box-sizing: border-box;
 }
 
-@media (max-width: 576px){
-    .pricing-banner {
-        background-size: cover;
-    }
-}
-@media (max-width: 993px){
-    .pricing-banner {
-        background-size: 300%;
-    }
-}
 div {
     display: block;
 }
@@ -32,15 +22,15 @@ body {
     margin-left: auto;
 }
 .row {
-    display: -ms-flexbox;
+    /* display: -ms-flexbox; */
     display: flex;
-    -ms-flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 .col-md-12{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
@@ -50,7 +40,7 @@ body {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    max-width: 77%;
+    width: 77%;
     align-items: stretch;
     min-height: 90px;
 }
@@ -174,6 +164,7 @@ button {
 
 .pricing-comparer {
     padding-bottom: 50px;
+    width: 100%;
 }
 .pricing-banner-para {
     margin: 80px auto 40px;
@@ -304,6 +295,7 @@ svg {
     font-weight: 500;
     cursor: pointer;
     background: #f9f9f9;
+    color: #000;
     border-radius: 10px;
     text-align: left;
     display: flex;
@@ -350,14 +342,14 @@ svg {
     margin-right: auto;
     margin-left: auto;
 }
-.row{
+/* .row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-}
+} */
 .col-md-12{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 1px;
 }
@@ -422,68 +414,10 @@ svg {
 .plain-row:hover{
     background-color: #fafafa;
 }
-.faq-container {
-    background: #fff;
-    border-radius: 16px;
-    margin-top: 60px;
-    padding: 60px 100px;
-    box-shadow: 0 20px 10px 0 rgb(0 0 0 / 8%);
-}
-.faq-container h3{
-    text-align: center;
-}
-.pricing-table-features{
-    color: #323643;
-}
-.frequent-questions {
-    display: table;
-    margin: 0 auto;
-    max-width: 1140px;
-    width: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 0 20px;
-}
-.frequent-questions .question-row:first-child {
-    margin-top: 0;
-}
-.question-row {
-    /* margin-top: 70px; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.question-column {
-    width: 100%;
-    cursor: pointer;
-    /* padding: 30px 0; */
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
-.question-column h6 {
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    border-style: none;
-}
-.question-column p {
-    font-size: 16px;
-    color: #6d717e;
-    line-height: 30px;
-    font-weight: 300;
-    margin-top: 12px;
-    display: none;
-    overflow: hidden;
-}
 .pricing-more-products{
     width: 95%;
     margin: auto;
+    margin-top: 50px;
 }
 .pricing-more-products h2 {
     text-align: center;
@@ -522,3 +456,87 @@ img {
     line-height: 24px;
     margin-bottom: 20px;
 }
+.faq-container{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(170, 159, 159);
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+#navbar{
+    display: block;
+    /* background-color: white;
+    opacity: 1; */
+}
+  
+  @media all and (min-width:320px) and (max-width:576px){
+    .pricing-calc__tab{
+        display: grid;
+    }
+    .pricing-calc__tabs{
+        width: auto;
+        margin: auto;
+    }
+    .pricing-plans{
+        display: grid;
+    }
+    .pricing-plans div{
+        margin: auto;
+    }
+    .row{
+        margin: auto;
+    }
+    .table-column{
+        width: 48%;
+    }
+    .more-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media all and (min-width:481px) and (max-width:768px){
+    
+    .pricing-calc__tab{
+        display: grid;
+    }
+    .pricing-calc__tabs{
+        width: auto;
+    }
+    .pricing-plans{
+        display: grid;
+    }
+    .pricing-plans div{
+        margin: auto;
+    }
+    .table-column{
+        width: 48%;
+    }
+    .more-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }

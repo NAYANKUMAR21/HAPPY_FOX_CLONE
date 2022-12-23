@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
     <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../navbar/index.css">
+    <link rel="stylesheet" href="../index/style/footer.css">
 </head>
 <body>
+  <div id="navbar"></div>
     <div class="pricing-banner">
         <div class="container">
             <div class="row">
@@ -549,77 +553,38 @@
 
     <div class="faq-container">
       <h3>Frequently Asked Questions</h3>
-      <div class="frequent-questions">
-        <div class="question-row">
-          
-          <div class="question-column">
-            <h6>
-              Who are help desk agents?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon" class="">
-            </h6>
-            <p>
-              Support agents (help desk staff) who will be actively managing
-              and responding to tickets raised by contacts.
-            </p>
-          </div>
-          <div class="question-column">
-            <h6>
-              What are Categories?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon">
-            </h6>
-            <p>
-              Categories allow you to separate incoming requests into
-              dedicated ticket types that can be distributed to a specific
-              team, have unique SLA requirements, and produce insightful
-              metrics.
-            </p>
-          </div>
-          <div class="question-column">
-            <h6>
-              How can I change my plan?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon">
-            </h6>
-            <p>
-              This mentioned "downgrade" which is mostly perceived as a
-              negative event. Suggestion: Simply request our Customer
-              Support team to adjust your plan. The change would take effect
-              on the next monthly billing cycle and the subscription amount
-              would be revised accordingly.
-            </p>
-          </div>
-          <div class="question-column">
-            <h6>
-              Do you offer a trial?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon">
-            </h6>
-            <p>
-              We encourage you to determine if HappyFox Help Desk is the right fit for your
-              organization. Once we identify your needs, we'd be happy to
-              provide access to a trial account where you can configure your
-              proof of concept.
-            </p>
-          </div>
-          <div class="question-column">
-            <h6>
-              Do you offer discounts for non-profits or educational
-              institutes?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon">
-            </h6>
-            <p>
-              We offer a 10% discount on annual subscriptions on any plan.
-            </p>
-          </div>
-          <div class="question-column">
-            <h6>
-              What are the available billing cycles?
-              <img src="https://static.thenounproject.com/png/1666929-200.png" alt="icon">
-            </h6>
-            <p>
-              We offer a monthly, annual, 2-year savings plan (paid upfront), and 3-year contract for agent-based pricing.
-            </p>
-          </div>
+      <button type="button" class="collapsible">Who are help desk agents?</button>
+        <div class="content">
+          <p>Support agents (help desk staff) who will be actively managing
+            and responding to tickets raised by contacts.</p>
         </div>
-      </div>
+        <button type="button" class="collapsible">What are Categories?</button>
+        <div class="content">
+          <p>Categories allow you to separate incoming requests into
+            dedicated ticket types that can be distributed to a specific
+            team, have unique SLA requirements, and produce insightful
+            metrics.</p>
+        </div>
+        <button type="button" class="collapsible">How can I change my plan?</button>
+        <div class="content">
+          <p>This mentioned "downgrade" which is mostly perceived as a
+            negative event. Suggestion: Simply request our Customer
+            Support team to adjust your plan. The change would take effect
+            on the next monthly billing cycle and the subscription amount
+            would be revised accordingly.</p>
+        </div>
+        <button type="button" class="collapsible">Do you offer a trial?</button>
+        <div class="content">
+          <p>We encourage you to determine if HappyFox Help Desk is the right fit for your
+            organization. Once we identify your needs, we'd be happy to
+            provide access to a trial account where you can configure your
+            proof of concept.</p>
+        </div>
+        <button type="button" class="collapsible">Do you offer discounts for non-profits or educational
+          institutes?</button>
+        <div class="content">
+          <p>We offer a 10% discount on annual subscriptions on any plan.</p>
+        </div>
     </div>
 
 
@@ -671,5 +636,146 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
 </body>
 </html>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="../navbar/navbar.js"></script>
+<script type="module">
+  import {footer,navbar,chat} from '../comp/import.js';
+
+  document.getElementById("navbar").innerHTML=navbar();
+  document.getElementById("footer").innerHTML=footer();
+  import {drop,support,operations,features,solutions,resourse} from '../navbar/components/dropdown.js'
+   //console.log(drop)
+  
+    console.log(features)
+   let n = 0
+   let o = 0
+   let p = 0
+   let q = 0
+   let r = 0;
+   let s = 0;
+   let feat = document.querySelector('#customerService');
+   feat.addEventListener("click",main1)
+
+   function main1(){
+       n++
+       document.getElementById("feat").innerHTML = ""
+       document.getElementById("bottom_navbar").innerHTML = ""
+       if(n%2!==0){
+           let x = drop()
+        document.getElementById("feat").innerHTML = drop()
+        document.getElementById("feat").style.backgroundColor = "white"
+       // console.log(x)
+       }else if(n%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+      
+   }
+
+   let Support = document.querySelector('#itSupport');
+   Support.addEventListener("click",main2)
+   function main2(){
+    o++
+    document.getElementById("feat").innerHTML = ""
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(o%2!==0){
+        document.getElementById("feat").innerHTML = support()
+        document.getElementById("feat").style.backgroundColor = "white"
+    }else if(o%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+   }
+
+   let Operate = document.querySelector('#operations');
+   Operate.addEventListener("click",main3)
+
+   function main3(){
+    p++
+    document.getElementById("feat").innerHTML = ""
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(p%2!==0){
+        document.getElementById("feat").innerHTML = operations()
+        document.getElementById("feat").style.backgroundColor = "white"
+    }else if(p%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("feat").innerHTML = ""
+           //console.log(n)
+       }
+   }
+
+   let speci1 = document.querySelector('#features');
+   speci1.addEventListener("click",main4)
+   function main4(){
+    q++
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(q%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = features()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(q%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
+    let speci2 = document.querySelector('#Solutions');
+   speci2.addEventListener("click",main5)
+   function main5(){
+    r++
+    document.getElementById("bottom_navbar").innerHTML = ""
+    if(r%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = solutions()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(r%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
+    let speci3 = document.querySelector('#resourse')
+    speci3.addEventListener("click",main6);
+    
+    function main6(){
+        s++
+        document.getElementById("bottom_navbar").innerHTML = ""
+    if(s%2!==0){
+        document.getElementById("bottom_navbar").innerHTML = resourse()
+        document.getElementById("bottom_navbar").style.backgroundColor = "white"
+    }else if(s%2==0){
+           // document.body.innerHTML = ""
+           document.getElementById("bottom_navbar").innerHTML = ""
+           //console.log(n)
+       }
+    }
+    document.getElementById("login").addEventListener("click",function(){
+      window.location.href='../login/index.html'
+    })
+    document.getElementById("demo_nav").addEventListener("click",function(){
+      window.location.href='../Demo/demo.html'
+    })
+    document.getElementById("home").addEventListener("click",function(){
+    window.location.href='../index.html'
+    })
+</script>
